@@ -14,11 +14,11 @@ const Hero = () => {
                     </div>
 
                     <div className='hero-target-links gap-10'>
-                        <a href="" className='link link-1'>
+                        <a href="/nosotros" className='link link-1'>
                             <p className='link-text'>Sobre nosotros</p>
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </a>
-                        <a href="" className='link link-2'>
+                        <a href="" className='link link-2 call-button'>
                             <span className="material-symbols-outlined">phone_in_talk</span>
                             <p className='link-text'>Llamar ahora</p>
                         </a>

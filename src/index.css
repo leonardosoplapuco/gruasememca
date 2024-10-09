@@ -92,6 +92,27 @@ button{
 
 /**/
 
+.call-button:hover .material-symbols-outlined{
+    animation: shake 1s ease-in-out infinite;
+}
+
+@keyframes shake{
+    0%, 25%{
+        rotate: -5deg;
+    }
+    25%, 50%{
+        rotate: 5deg;
+    }
+    50%, 75%{
+        rotate: -5deg;
+    }
+    75%, 100%{
+        rotate: 0;
+    }
+}
+
+/**/
+
 .simple-link{
     display: flex;
     align-items: center;
