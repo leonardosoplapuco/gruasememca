@@ -52,13 +52,14 @@ button{
     cursor: pointer;
     border: 0;
     outline: 0;
+    background: transparent;
 }
 
 .link{
     cursor: pointer;
     width: auto;
     padding: 0 20px;
-    height: 40px;
+    min-height: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -72,7 +73,6 @@ button{
 }
 
 .link-1:hover{
-    /* border: 1px solid var(--red); */
     background: #DA111D15;
 }
 
@@ -93,7 +93,7 @@ button{
 /**/
 
 .call-button:hover .material-symbols-outlined{
-    animation: shake 1s ease-in-out infinite;
+    animation: shake 0.5s ease-in-out infinite;
 }
 
 @keyframes shake{
