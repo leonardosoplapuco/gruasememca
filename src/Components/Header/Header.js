@@ -1,4 +1,3 @@
-// Header.js
 import React from 'react';
 import './Header.css';
 
@@ -22,25 +21,25 @@ const Header = () => {
                                 <li>
                                     <button type='button' className='menu-link menu-link-2'>
                                         <h2>Servicios</h2>
-                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-3'>
                                         <h2>Maquinaria</h2>
-                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-4'>
                                         <h2>Proyectos</h2>
-                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-5'>
                                         <h2>Nosotros</h2>
-                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                             </ul>
@@ -48,7 +47,7 @@ const Header = () => {
 
                         <a className='link link-2 margin-left'>
                             <h2 className='link-text'>Contáctanos</h2>
-                            <span class="material-symbols-outlined">mail</span>
+                            <span className="material-symbols-outlined">mail</span>
                         </a>
                     </div>
                 </div>

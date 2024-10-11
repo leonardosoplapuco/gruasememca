@@ -100,7 +100,7 @@ h1 b{
     background: var(--white);
     border-radius: 5px;
     overflow: hidden;
-    border: 1px solid #EAEAEA;
+    border: 1px solid var(--white-1);
 }
 
 .hero-card-content{

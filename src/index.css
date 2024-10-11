@@ -10,6 +10,14 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --body: #F8F9FA;
     --header: #FFFFFF;
@@ -26,6 +34,8 @@
     --black-3: #333333;
     --black-4: #444444;
     --black-5: #555555;
+
+    --white-1: #EAEAEA;
 
     --t-100ms: all 100ms linear;
 }
@@ -48,6 +58,24 @@ body{
 
 /**/
 
+.block-container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.block-content{
+    margin: auto;
+    width: 100%;
+    max-width: 2000px;
+}
+
+.bg-white-1{
+    background: var(--white-1);
+}
+
+/**/
+
 button{
     cursor: pointer;
     border: 0;
@@ -59,7 +87,7 @@ button{
     cursor: pointer;
     width: auto;
     padding: 0 20px;
-    min-height: 40px;
+    min-height: 44px;
     border-radius: 5px;
     display: flex;
     align-items: center;
