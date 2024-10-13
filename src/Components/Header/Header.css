@@ -116,6 +116,7 @@ header{
     margin: auto;
     width: 100%;
     max-width: 2000px;
+    gap: 10px;
 }
 
 .header-bottom-locations-container{
@@ -126,21 +127,169 @@ header{
     position: absolute;
     left: 0;
     top: calc(100% + 20px);
+    width: calc(100% + 210px);
+    background: var(--header);
+    border-radius: 5px;
+    transition: var(--t-100ms);
+    border: 1px solid var(--white-1);
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    /* interpolate-size: allow-keywords; */
+}
+
+.header-bottom-locations.active,
+.header-bottom-translates.active,
+.header-bottom-themes.active{
+    opacity: 1;
+    pointer-events: unset;
+    user-select: unset;
+}
+
+/**/
+
+.header-search-bar-container{
+    width: calc(100% - 409.3px);
+    height: 44px;
+    position: relative;
+}
+
+.header-search-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: #FFFFFF50;
+    outline: 0;
+    border: 2px solid var(--white-1);
+    transition: var(--t-100ms);
+}
+
+.header-search-bar:hover,
+.header-search-bar:focus{
+    border: 2px solid var(--red);
+}
+
+.header-search-bar-container span{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    color: var(--white-1);
+}
+
+/**/
+
+.header-bottom-translate-container{
+    position: relative;
+}
+
+.header-bottom-translates{
+    position: absolute;
+    right: 0;
+    top: calc(100% + 20px);
     background: var(--header);
     border: 1px solid var(--white-1);
     padding: 10px;
     border-radius: 5px;
+    transition: var(--t-100ms);
     opacity: 0;
     pointer-events: none;
     user-select: none;
-    transition: var(--t-100ms);
 }
 
-.header-bottom-locations.active{
-    opacity: 1;
-    pointer-events: unset;
-    user-select: unset;
-    box-shadow: 0 0 10px var(--white-1);
+.peru-layer,
+.eeuu-layer{
+    width: 30px;
+    height: 18px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.peru-layer{
+    background: #FF0000;
+}
+
+.peru-layer::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    translate: -50% 0;
+    width: calc(100% / 3);
+    height: 100%;
+    background: var(--white);
+}
+
+.eeuu-layer{
+    border: 1px solid var(--white-1);
+    background: var(--white);
+}
+
+.eeuu-blue{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% / 3);
+    height: calc(100% / 2);
+    background: blue;
+    border-bottom-right-radius: 2px;
+    z-index: 1;
+}
+
+.eeuu-line{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.eeuu-line-1{
+    height: 100%;
+    background: crimson;
+}
+
+.eeuu-line-2{
+    top: 2px;
+    height: calc(100% - 4px);
+    background: var(--white);
+}
+
+.eeuu-line-3{
+    top: 4px;
+    height: calc(100% - 8px);
+    background: crimson;
+}
+
+.eeuu-line-4{
+    top: 50%;
+    translate: 0 -50%;
+    height: 3px;
+    background: var(--white);
+}
+
+/**/
+
+.header-bottom-themes-container{
+    position: relative;
+}
+
+.header-bottom-themes{
+    position: absolute;
+    right: 0;
+    top: calc(100% + 20px);
+    background: var(--header);
+    border: 1px solid var(--white-1);
+    padding: 10px;
+    border-radius: 5px;
+    transition: var(--t-100ms);
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
 }
 
 /**/
@@ -162,23 +311,48 @@ header{
 /**/
 
 @media screen and (max-width:600px){
+    .header-top-container{
+        padding: 0 10px;
+    }
     .header-top-content{
         height: 60px;
     }
 
     .header-top-logo h2,
     .header-top-logo h2 b{
-        font-size: 28px;
+        font-size: 30px;
     }
     
     .header-menu-container{
         display: none;
     }
+
+    .header-top-contact{
+        display: none !important;
+    }
+
+    .header-bottom-container{
+        padding: 0 10px;
+        padding-bottom: 10px;
+    }
+    .header-bottom-content{
+        gap: 5px;
+    }
     
-    .header-bottom-locations-button{
+    .header-bottom-locations-button,
+    .header-bottom-traslate-button,
+    .header-bottom-traslate-button{
         gap: 0 !important;
+        overflow: hidden;
     }
     .header-bottom-locations-button .link-text{
         display: none;
+    }
+    .header-bottom-locations{
+        width: calc(100% + 280px);
+    }
+
+    .header-search-bar-container{
+        width: calc(100% - 219px);
     }
 }

@@ -38,7 +38,7 @@ const Hero = () => {
                                 <div className='hero-card-content d-flex-column gap-10'>
                                     <p className='card-title'>Izaje estructura metálica - REPSOL</p>
                                     <p className='text hero-card-content-large-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
-                                    <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...</p>
+                                    <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing industry's...</p>
 
                                     <a href="" className='simple-link simple-link-1 margin-right'>
                                         <p className='simple-link-text text'>Ver más</p>

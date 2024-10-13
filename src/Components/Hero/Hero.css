@@ -216,4 +216,8 @@ h1 b{
     .hero-card-content-short-text{
         display: block;
     }
+    .hero-cards-buttons{
+        margin-right: unset;
+        margin-left: auto;
+    }
 }
