@@ -8,10 +8,16 @@ const Hero = () => {
                 <div className='hero-target hero-target-1'>
                     <p className='route d-flex-center-left gap-5'>Lima, Perú <span></span></p>
                     <h1>Alquiler de <b>grúas telescópicas</b></h1>
-                    <div className='d-flex-column margin-bottom-10'>
-                        <p className='text'>Con más de 15 años de experiencia en el sector en servicios de alquiler de grúas, izajes y eliminación de tierra.</p>
-                        <p className='text'>Nuestro compromiso con la calidad y la seguridad nos distingue, ofreciendo soluciones personalizadas que se adaptan a las necesidades de cada proyecto.</p>
-                    </div>
+                    <ul className='list-simple d-flex-column margin-bottom-10'>
+                        <li>
+                            <span className="material-symbols-outlined">check</span>
+                            <p className='text'>Con más de 15 años de experiencia en el sector en servicios de alquiler de grúas, izajes y eliminación de tierra.</p>
+                        </li>
+                        <li>
+                            <span className="material-symbols-outlined">check</span>
+                            <p className='text'>Nuestro compromiso con la calidad y la seguridad nos distingue, ofreciendo soluciones personalizadas que se adaptan a las necesidades de cada proyecto.</p>
+                        </li>
+                    </ul>
 
                     <div className='hero-target-links gap-10'>
                         <a href="/nosotros" className='link link-1'>
@@ -35,7 +41,7 @@ const Hero = () => {
                                     <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...</p>
 
                                     <a href="" className='simple-link simple-link-1 margin-right'>
-                                        <p className='simple-link-text'>Ver más</p>
+                                        <p className='simple-link-text text'>Ver más</p>
                                         <span className="material-symbols-outlined">chevron_right</span>
                                     </a>
                                 </div>

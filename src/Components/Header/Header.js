@@ -51,6 +51,41 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
+
+                <div className='header-bottom-container'>
+                    <div className='header-bottom-content'>
+                        <nav className='header-bottom-locations-container'>
+                            <button type='button' className='link link-1 header-bottom-locations-button'>
+                                <span class="material-symbols-outlined">near_me</span>
+                                <p className='link-text'>Ubícanos</p>
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </button>
+
+                            <ul className='header-bottom-locations d-flex-column gap-10'>
+                                <li>
+                                    <a href="" className='link link-1 d-flex-center-left'>
+                                        <span class="material-symbols-outlined">location_on</span>
+                                        <p className='link-text'>Av. Ate, Ate</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" className='link link-1 d-flex-center-left'>
+                                        <span class="material-symbols-outlined">location_on</span>
+                                        <p className='link-text'>Antigua panamericana sur, Lurín</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div className='sub-header-container'>
+                <nav className='sub-header-content'>
+                    <ul className='sub-header-2'>
+                        asdasd
+                    </ul>
+                </nav>
             </div>
         </header>
     );

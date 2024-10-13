@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Roobert', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -72,6 +72,24 @@ body{
 
 .bg-white-1{
     background: var(--white-1);
+}
+
+/**/
+
+.list-simple{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-simple li{
+    display: flex;
+    align-content: flex-start;
+    gap: 3px;
+}
+
+.list-simple li span{
+    color: #34A853;
 }
 
 /**/
@@ -202,6 +220,11 @@ button{
 
 @media screen and (max-width:600px){
     *{
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .link{
+        min-height: 40px;
+        padding: 0 10px;
     }
 }
