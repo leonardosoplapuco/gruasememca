@@ -442,12 +442,7 @@ const Header = () => {
                 <div className='header-bottom-container'>
                     <div className='header-bottom-content d-flex'>
                         <nav className='header-bottom-locations-container'>
-                            <button
-                                type='button'
-                                onClick={toggleLocations}
-                                title='Ubícanos'
-                                className={`link link-3 header-bottom-locations-button ${isLocationsActive ? 'active' : ''}`}
-                            >
+                            <button type='button' onClick={toggleLocations} title='Ubícanos' className={`link link-3 header-bottom-locations-button ${isLocationsActive ? 'active' : ''}`}>
                                 <span className="material-symbols-outlined">near_me</span>
                                 <p className='link-text'>Ubícanos</p>
                                 <span className="material-symbols-outlined">keyboard_arrow_down</span>
@@ -458,14 +453,14 @@ const Header = () => {
                                     <a href="https://maps.app.goo.gl/XmmXfiNq4ZeCVLpa6" className='link link-3 d-flex-center-left' target='_blank'>
                                         <span className="material-symbols-outlined">location_on</span>
                                         <p className='link-text'>Av. Ate, Ate</p>
-                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                        <span className="material-symbols-outlined">arrow_forward</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://maps.app.goo.gl/LrmKdffdM1k3GWHg7" className='link link-3 d-flex-center-left' target='_blank'>
                                         <span className="material-symbols-outlined">location_on</span>
                                         <p className='link-text'>Antigua panamericana sur, Lurín</p>
-                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                        <span className="material-symbols-outlined">arrow_forward</span>
                                     </a>
                                 </li>
                             </ul>
@@ -476,14 +471,8 @@ const Header = () => {
                             <span className="material-symbols-outlined">search</span>
                         </form>
 
-                        {/* Menú de idiomas */}
                         <nav className='header-bottom-translate-container'>
-                            <button
-                                type='button'
-                                onClick={toggleTranslate}
-                                title='Idioma'
-                                className={`link link-3 header-bottom-translate-button ${isTranslateActive ? 'active' : ''}`}
-                            >
+                            <button type='button' onClick={toggleTranslate} title='Idioma' className={`link link-3 header-bottom-translate-button ${isTranslateActive ? 'active' : ''}`}>
                                 <span className="material-symbols-outlined">g_translate</span>
                                 <span className="material-symbols-outlined">keyboard_arrow_down</span>
                             </button>
@@ -510,14 +499,8 @@ const Header = () => {
                             </ul>
                         </nav>
 
-                        {/* Menú de temas */}
                         <nav className='header-bottom-themes-container'>
-                            <button
-                                type='button'
-                                onClick={toggleThemes}
-                                title='Tema'
-                                className={`link link-3 header-bottom-themes-button ${isThemesActive ? 'active' : ''}`}
-                            >
+                            <button type='button' onClick={toggleThemes} title='Tema' className={`link link-3 header-bottom-themes-button ${isThemesActive ? 'active' : ''}`}>
                                 <span className="material-symbols-outlined">contrast</span>
                                 <span className="material-symbols-outlined">keyboard_arrow_down</span>
                             </button>

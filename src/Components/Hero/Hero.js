@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
 
 const Hero = () => {
-    return(
+    const [activeCard, setActiveCard] = useState(1); // Estado para rastrear qué tarjeta está activa
+
+    // Función para cambiar a la tarjeta 1
+    const handleCardButton1Click = () => {
+        setActiveCard(1);
+    };
+
+    // Función para cambiar a la tarjeta 2
+    const handleCardButton2Click = () => {
+        setActiveCard(2);
+    };
+
+    return (
         <div className='hero-container'>
             <section className='hero'>
                 <div className='hero-target hero-target-1'>
@@ -24,7 +36,7 @@ const Hero = () => {
                             <p className='link-text'>Sobre nosotros</p>
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </a>
-                        <a href="" className='link link-2 call-button'>
+                        <a href="tel:+51 954132098" className='link link-2 call-button'>
                             <span className="material-symbols-outlined">phone_in_talk</span>
                             <p className='link-text'>Llamar ahora</p>
                         </a>
@@ -33,14 +45,15 @@ const Hero = () => {
 
                 <div className='hero-target hero-target-2'>
                     <nav className='hero-cards-container'>
-                        <ul className='hero-cards'>
+                        {/* Aplicamos la clase 'active' cuando el activeCard es 2 */}
+                        <ul className={`hero-cards ${activeCard === 2 ? 'active' : ''}`}>
                             <div className='hero-card hero-card-1'>
                                 <div className='hero-card-content d-flex-column gap-10'>
                                     <p className='card-title'>Izaje estructura metálica - REPSOL</p>
                                     <p className='text hero-card-content-large-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
                                     <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing industry's...</p>
 
-                                    <a href="" className='simple-link simple-link-1 margin-right'>
+                                    <a href="/" className='simple-link simple-link-1 margin-right'>
                                         <p className='simple-link-text text'>Ver más</p>
                                         <span className="material-symbols-outlined">chevron_right</span>
                                     </a>
@@ -50,27 +63,40 @@ const Hero = () => {
                                 </div>
                             </div>
 
-                            <a href='' className='hero-card hero-card-2'>
+                            <div className='hero-card hero-card-2'>
                                 <div className='hero-card-content d-flex-column gap-10'>
-                                    <p className='card-title'>Título 2</p>
+                                    <p className='card-title'>Izaje estructura metálica - REPSOL</p>
                                     <p className='text hero-card-content-large-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
-                                    <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...</p>
+                                    <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing industry's...</p>
+
+                                    <a href="/" className='simple-link simple-link-1 margin-right'>
+                                        <p className='simple-link-text text'>Ver más</p>
+                                        <span className="material-symbols-outlined">chevron_right</span>
+                                    </a>
                                 </div>
                                 <div className=''>
-                                    <img src="https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
+                                    <img src="https://www.gruasememca.com/media/img/gallery-5.webp" alt='REPSOL | Grúas Ememca SAC'></img>
                                 </div>
-                            </a>
+                            </div>
                         </ul>
                     </nav>
 
                     <ul className='hero-cards-buttons'>
                         <li>
-                            <button className='hero-card-button hero-card-button-1 active'>
+                            <button
+                                type='button'
+                                className={`hero-card-button hero-card-button-1 ${activeCard === 1 ? 'active' : ''}`}
+                                onClick={handleCardButton1Click}
+                            >
                                 <span>1</span>
                             </button>
                         </li>
                         <li>
-                            <button className='hero-card-button hero-card-button-2'>
+                            <button
+                                type='button'
+                                className={`hero-card-button hero-card-button-2 ${activeCard === 2 ? 'active' : ''}`}
+                                onClick={handleCardButton2Click}
+                            >
                                 <span>2</span>
                             </button>
                         </li>

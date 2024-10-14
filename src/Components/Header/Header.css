@@ -340,8 +340,8 @@ header{
     }
     
     .header-bottom-locations-button,
-    .header-bottom-traslate-button,
-    .header-bottom-traslate-button{
+    .header-bottom-translate-button,
+    .header-bottom-themes-button{
         gap: 0 !important;
         overflow: hidden;
     }
