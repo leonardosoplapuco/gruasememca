@@ -1,5 +1,5 @@
 .dark-mode{
-    --body: #121212;
+    --body: #212121;
     --header: #000000;
 
     --white: #FFFFFF;
@@ -49,18 +49,50 @@
 
 .dark-mode .menu-link h2,
 .dark-mode .menu-link span{
-    color: var(--black-9);
-}
-
-.dark-mode .menu-link.active h2,
-.dark-mode .menu-link:hover h2,
-.dark-mode .menu-link.active span,
-.dark-mode .menu-link:hover span{
     color: var(--white);
 }
 
 /* Hero */
 
-.hero-target-1 h1{
+.dark-mode .hero-target-1 h1{
     color: var(--white);
+}
+
+.dark-mode .hero-card{
+    background: var(--black-3);
+    border: none;
+}
+
+.dark-mode .hero-card div{
+    border-left: none;
+}
+
+.dark-mode .hero-card-content .card-title{
+    color: var(--white-1);
+}
+
+.dark-mode .hero-card-content .simple-link .simple-link-text,
+.dark-mode .hero-card-content .simple-link span{
+    color: var(--white);
+}
+
+.dark-mode .hero-card-button{
+    background: none;
+    border: 1px solid var(--white);
+}
+
+.dark-mode .hero-card-button span{
+    color: var(--white);
+    
+}
+
+.dark-mode .hero-card-button:hover,
+.dark-mode .hero-card-button.active{
+    background: var(--white);
+    border: 0;
+}
+
+.dark-mode .hero-card-button:hover span,
+.dark-mode .hero-card-button.active span{
+    color: var(--black-3);
 }

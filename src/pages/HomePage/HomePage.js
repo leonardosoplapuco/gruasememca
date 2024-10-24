@@ -10,6 +10,10 @@ function HomePage() {
                 <Header/>
                 <Hero/>
 
+                <div className='block-container home-page-1'>
+                    <video src="https://gruasememca.com/media/videos/video-1.webm" autoPlay muted></video>
+                </div>
+
                 <div className='block-container bg-white-1'>
                     <section className='block-content'>
                         <nav className='homepage-block-container-1'>

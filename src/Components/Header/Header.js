@@ -95,6 +95,11 @@ const Header = () => {
                             <h2 className='link-text'>Contáctanos</h2>
                             <span className="material-symbols-outlined">mail</span>
                         </a>
+
+                        <button type='button' className='menu-icon margin-left'>
+                            <span class="material-symbols-outlined">menu</span>
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
                     </div>
                 </div>
 
