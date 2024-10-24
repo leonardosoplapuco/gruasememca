@@ -5,6 +5,7 @@
     max-height: 600px;
     padding: 20px;
     display: flex;
+    background: var(--body);
 }
 
 .hero{
@@ -115,7 +116,6 @@
 
 .hero-card-content p{
     color: var(--text);
-    font-size: 16px;
 }
 
 .hero-card-content-short-text{

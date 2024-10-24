@@ -1,0 +1,66 @@
+.dark-mode{
+    --body: #121212;
+    --header: #000000;
+
+    --white: #FFFFFF;
+    --red: #EE2532;
+    --whatsapp: #25D366;
+
+    --text: #FFFFFF;
+}
+
+/**/
+
+.dark-mode .link-1{
+    border: 1px solid var(--white);
+}
+
+.dark-mode .link-1:hover{
+    background: #FFFFFF35;
+}
+
+.dark-mode .link-1 .link-text,
+.dark-mode .link-1 span{
+    color: var(--white);
+}
+
+.dark-mode .link-3.active,
+.dark-mode .link-3:hover{
+    background: #FFFFFF35;
+}
+
+.dark-mode .link-3 .link-text,
+.dark-mode .link-3 span{
+    color: var(--black-9);
+}
+
+.dark-mode .link-3.active .link-text,
+.dark-mode .link-3:hover .link-text,
+.dark-mode .link-3.active span,
+.dark-mode .link-3:hover span{
+    color: var(--white);
+}
+
+/* Header */
+
+.dark-mode .header-top-logo h2{
+    color: var(--white);
+}
+
+.dark-mode .menu-link h2,
+.dark-mode .menu-link span{
+    color: var(--black-9);
+}
+
+.dark-mode .menu-link.active h2,
+.dark-mode .menu-link:hover h2,
+.dark-mode .menu-link.active span,
+.dark-mode .menu-link:hover span{
+    color: var(--white);
+}
+
+/* Hero */
+
+.hero-target-1 h1{
+    color: var(--white);
+}

@@ -4,12 +4,10 @@ import './Hero.css';
 const Hero = () => {
     const [activeCard, setActiveCard] = useState(1); // Estado para rastrear qué tarjeta está activa
 
-    // Función para cambiar a la tarjeta 1
     const handleCardButton1Click = () => {
         setActiveCard(1);
     };
 
-    // Función para cambiar a la tarjeta 2
     const handleCardButton2Click = () => {
         setActiveCard(2);
     };
@@ -45,7 +43,6 @@ const Hero = () => {
 
                 <div className='hero-target hero-target-2'>
                     <nav className='hero-cards-container'>
-                        {/* Aplicamos la clase 'active' cuando el activeCard es 2 */}
                         <ul className={`hero-cards ${activeCard === 2 ? 'active' : ''}`}>
                             <div className='hero-card hero-card-1'>
                                 <div className='hero-card-content d-flex-column gap-10'>
@@ -83,20 +80,12 @@ const Hero = () => {
 
                     <ul className='hero-cards-buttons'>
                         <li>
-                            <button
-                                type='button'
-                                className={`hero-card-button hero-card-button-1 ${activeCard === 1 ? 'active' : ''}`}
-                                onClick={handleCardButton1Click}
-                            >
+                            <button type='button' className={`hero-card-button hero-card-button-1 ${activeCard === 1 ? 'active' : ''}`} onClick={handleCardButton1Click}>
                                 <span>1</span>
                             </button>
                         </li>
                         <li>
-                            <button
-                                type='button'
-                                className={`hero-card-button hero-card-button-2 ${activeCard === 2 ? 'active' : ''}`}
-                                onClick={handleCardButton2Click}
-                            >
+                            <button type='button' className={`hero-card-button hero-card-button-2 ${activeCard === 2 ? 'active' : ''}`} onClick={handleCardButton2Click}>
                                 <span>2</span>
                             </button>
                         </li>

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+@import url('./DarkMode.css');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roobert', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -34,6 +36,7 @@ body::-webkit-scrollbar{
     --black-3: #333333;
     --black-4: #444444;
     --black-5: #555555;
+    --black-9: #999999;
 
     --white-1: #EAEAEA;
 
@@ -47,6 +50,11 @@ body::-webkit-scrollbar{
 
 .material-symbols-outlined{
     font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 1, 'opsz' 24;
+}
+
+.font-family-anton{
+    font-family: "Anton", sans-serif;
+    font-weight: normal;
 }
 
 /**/

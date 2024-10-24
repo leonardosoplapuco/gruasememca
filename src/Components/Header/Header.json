@@ -1,0 +1,46 @@
+{
+    "Header":[
+        {
+            "Links":[
+                {
+                    "id": 1,
+                    "menu-link-text": "Inicio"
+                },
+                {
+                    "id": 2,
+                    "menu-link-text": "Servicios",
+                    "bloques":[
+                        {
+                            "Bloque-1":[
+                                {
+                                    "tipo": "imagen",
+                                    "href": "https://concepto.de/wp-content/uploads/2018/08/monta%C3%B1as-e1533762807687-800x400.jpg",
+                                    "alt": "Texto relacionado a la imagen",
+                                    "descripcion": "Breve texto de lo que se muestra en la imagen o video"
+                                }
+                            ],
+                            "Bloque-2":[
+                                {
+                                    "Items":[
+                                        {
+                                            "id": 1,
+                                            "icono": "home",
+                                            "titulo": "Servicio 1",
+                                            "descripcion": "Breve descipción del servicio en mención"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "icono": "star",
+                                            "titulo": "Servicio 2",
+                                            "descripcion": "Breve descipción del servicio en mención"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
