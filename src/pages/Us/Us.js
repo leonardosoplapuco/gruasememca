@@ -1,10 +1,14 @@
-import './Us.css'
+import './Us.css';
+
+import Header from '../../Components/Header/Header';
 
 function Us() {
     return (
-        <div>
-            <p>Nosotros</p>
-        </div>
+        <>
+            <main>
+                <Header/>
+            </main>
+        </>
     );
 }
 

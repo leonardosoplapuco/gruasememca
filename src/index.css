@@ -44,8 +44,8 @@ body::-webkit-scrollbar{
 }
 
 @font-face{
-  font-family: 'Roobert';
-  src: url('../src/assets/font/RoobertSemiBold.ttf') format('truetype');
+    font-family: 'Roobert';
+    src: url('../src/assets/font/RoobertSemiBold.ttf') format('truetype');
 }
 
 .material-symbols-outlined{
@@ -107,6 +107,7 @@ button{
     border: 0;
     outline: 0;
     background: transparent;
+    transition: var(--t-100ms);
 }
 
 .link{
@@ -251,7 +252,7 @@ button{
 
 @media screen and (max-width:600px){
     *{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .link{

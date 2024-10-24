@@ -50,7 +50,7 @@ const Hero = () => {
                                     <p className='text hero-card-content-large-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
                                     <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing industry's...</p>
 
-                                    <a href="/" className='simple-link simple-link-1 margin-right'>
+                                    <a href="/" className='simple-link simple-link-1 margin-left'>
                                         <p className='simple-link-text text'>Ver más</p>
                                         <span className="material-symbols-outlined">chevron_right</span>
                                     </a>
@@ -66,7 +66,7 @@ const Hero = () => {
                                     <p className='text hero-card-content-large-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
                                     <p className='text hero-card-content-short-text'>Lorem Ipsum is simply dummy text of the printing industry's...</p>
 
-                                    <a href="/" className='simple-link simple-link-1 margin-right'>
+                                    <a href="/" className='simple-link simple-link-1 margin-left'>
                                         <p className='simple-link-text text'>Ver más</p>
                                         <span className="material-symbols-outlined">chevron_right</span>
                                     </a>
