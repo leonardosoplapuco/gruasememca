@@ -6,6 +6,7 @@ const Header = () => {
     const [isTranslateActive, setIsTranslateActive] = useState(false);
     const [isThemesActive, setIsThemesActive] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
+    const [isMenuActive, setIsMenuActive] = useState(false);
 
     const toggleLocations = () => {
         setIsLocationsActive(!isLocationsActive);
@@ -33,6 +34,10 @@ const Header = () => {
     const enableDarkMode = () => {
         setIsDarkMode(true);
         localStorage.setItem('theme', 'dark');
+    };
+
+    const menuActive = () => {
+        setIsMenuActive(!isMenuActive);
     };
 
     useEffect(() => {
@@ -96,9 +101,9 @@ const Header = () => {
                             <span className="material-symbols-outlined">mail</span>
                         </a>
 
-                        <button type='button' className='menu-icon margin-left'>
-                            <span class="material-symbols-outlined">menu</span>
-                            <span class="material-symbols-outlined">close</span>
+                        <button type='button' className={`menu-icon margin-left ${isMenuActive ? 'active' : ''}`} onClick={menuActive}>
+                            <span className="material-symbols-outlined menu-icon-open">menu</span>
+                            <span className="material-symbols-outlined menu-icon-close">close</span>
                         </button>
                     </div>
                 </div>
@@ -197,7 +202,7 @@ const Header = () => {
                                 <b>Grúas</b>
                                 <b>Ememca</b>
                             </h3>
-                            <video src='https://gruasememca.com/media/videos/video-1.webm' controls></video>
+                            <video src='https://gruasememca.com/media/videos/video-1.webm' autoPlay muted></video>
                         </div>
                         <div className='sub-header-target sub-header-target-2 d-flex-column gap-20'>
                             <h3 className='sub-header-target-title font-family-anton'>Servicios</h3>

@@ -64,6 +64,18 @@ body{
     color: var(--text);
 }
 
+.text{
+    color: var(--text);
+}
+
+.color-white{
+    color: var(--white);
+}
+
+.color-red{
+    color: var(--red);
+}
+
 /**/
 
 .block-container{
@@ -78,8 +90,34 @@ body{
     max-width: 2000px;
 }
 
+.title,
+.title b,
+.title span{
+    font-size: 48px;
+}
+
+.card-title,
+.card-title b,
+.card-title span{
+    font-size: 24px;
+}
+
+.card-icon{
+    font-size: 40px;
+}
+
+/**/
+
 .bg-white-1{
     background: var(--white-1);
+}
+
+.bg-white-1-to-white{
+    background: var(--white-1);
+}
+
+.bg-white-1-to-white:hover{
+    background: var(--red);
 }
 
 /**/
@@ -214,6 +252,17 @@ button{
     justify-content: left;
 }
 
+.d-flex-wrap{
+    flex-wrap: wrap;
+}
+
+/**/
+
+.d-grid-2-2-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /**/
 
 .gap-5{
@@ -244,8 +293,44 @@ button{
 
 /**/
 
+.padding-20{
+    padding: 20px;
+}
+
+/**/
+
 .width-100{
     width: 100%;
+}
+
+/**/
+
+.card-item-3-2-1{
+    flex: 1 1 clamp(300px, calc(calc(100% / 3) - calc(40px / 3)), 100%);
+    max-width: 800px;
+    transition: var(--t-100ms);
+}
+
+/**/
+
+.img-simple{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-simple{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/**/
+
+.border-radius-10{
+    border-radius: 10px;
 }
 
 /**/
@@ -253,6 +338,22 @@ button{
 @media screen and (max-width:600px){
     *{
         font-size: 15px;
+    }
+
+    .title,
+    .title b,
+    .title span{
+        font-size: 40px;
+    }
+
+    .card-title,
+    .card-title b,
+    .card-title span{
+        font-size: 20px;
+    }
+    
+    .d-grid-2-2-1{
+        grid-template-columns: 1fr;
     }
 
     .link{
