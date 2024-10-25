@@ -57,7 +57,7 @@
 
     <!-- Ejemplo de una página con imágenes -->
 
-    <url>
+    <!-- <url>
         <loc>https://www.gruasememca.vercel.app/</loc>
         <lastmod>2024-10-24</lastmod>
         <changefreq>monthly</changefreq>
@@ -70,6 +70,6 @@
             <image:loc>https://www.tusitio.com/images/producto2.jpg</image:loc>
             <image:title>Producto 2</image:title>
         </image:image>
-    </url>
+    </url> -->
 
 </urlset>
