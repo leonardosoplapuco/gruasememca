@@ -56,7 +56,7 @@ const Hero = () => {
                                     </a>
                                 </div>
                                 <div className=''>
-                                    <img src="https://www.gruasememca.com/media/img/gallery-5.webp" alt='REPSOL | Grúas Ememca SAC'></img>
+                                    <img src="https://www.gruasememca.vercel.app/src/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" alt='REPSOL | Grúas Ememca SAC'></img>
                                 </div>
                             </div>
 
