@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Hero.css';
 
 const Hero = () => {
-    const [activeCard, setActiveCard] = useState(1); // Estado para rastrear qué tarjeta está activa
+    const [activeCard, setActiveCard] = useState(1);
 
     const handleCardButton1Click = () => {
         setActiveCard(1);
@@ -56,7 +56,7 @@ const Hero = () => {
                                     </a>
                                 </div>
                                 <div className=''>
-                                    <img src="https://www.gruasememca.vercel.app/src/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" alt='REPSOL | Grúas Ememca SAC'></img>
+                                    <img src="https://www.gruasememca.vercel.app/public/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" alt='REPSOL | Grúas Ememca SAC'></img>
                                 </div>
                             </div>
 

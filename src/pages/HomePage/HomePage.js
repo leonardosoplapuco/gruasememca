@@ -30,8 +30,6 @@ function HomePage() {
                                 </li>
                             </ul>
                         </nav>
-
-                        
                     </section>
                 </div>
             </main>
