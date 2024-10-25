@@ -57,19 +57,15 @@
 
     <!-- Ejemplo de una página con imágenes -->
 
-    <!-- <url>
+    <url>
         <loc>https://www.gruasememca.vercel.app/</loc>
         <lastmod>2024-10-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <image:image>
-            <image:loc>https://www.tusitio.com/images/producto1.jpg</image:loc>
-            <image:title>Producto 1</image:title>
+            <image:loc>https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp</image:loc>
+            <image:title>Grúas Ememca | Servicio para Repsol 2024</image:title>
         </image:image>
-        <image:image>
-            <image:loc>https://www.tusitio.com/images/producto2.jpg</image:loc>
-            <image:title>Producto 2</image:title>
-        </image:image>
-    </url> -->
+    </url>
 
 </urlset>
