@@ -1,0 +1,16 @@
+[
+    {
+        "slug": "noticia-1",
+        "title": "Título de la noticia 1",
+        "description": "Descripción de la noticia 1",
+        "image": "https://www.ejemplo.com/imagen-noticia-1.jpg",
+        "content": "Contenido del artículo de la noticia 1"
+    },
+    {
+        "slug": "noticia-2",
+        "title": "Título de la noticia 2",
+        "description": "Descripción de la noticia 2",
+        "image": "https://www.ejemplo.com/imagen-noticia-2.jpg",
+        "content": "Contenido del artículo de la noticia 2"
+    }
+]
