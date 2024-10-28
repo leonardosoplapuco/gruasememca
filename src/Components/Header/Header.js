@@ -2,11 +2,16 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
+    const [isActive, setIsActive] = useState(false);
     const [isLocationsActive, setIsLocationsActive] = useState(false);
     const [isTranslateActive, setIsTranslateActive] = useState(false);
     const [isThemesActive, setIsThemesActive] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
     const [isMenuActive, setIsMenuActive] = useState(false);
+
+    const handleMenuLinkClick = () => {
+        setIsActive(!isActive);
+    };
 
     const toggleLocations = () => {
         setIsLocationsActive(!isLocationsActive);
@@ -61,35 +66,41 @@ const Header = () => {
                             <ul className='header-menu'>
                                 <li>
                                     <a href='/' className='menu-link menu-link-1'>
+                                        <span class="material-symbols-outlined menu-link-repre-icon">home</span>
                                         <h2>Inicio</h2>
                                     </a>
                                 </li>
                                 <li>
-                                    <button type='button' className='menu-link menu-link-2'>
+                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={handleMenuLinkClick}>
+                                        <span class="material-symbols-outlined menu-link-repre-icon">handshake</span>
                                         <h2>Servicios</h2>
-                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-3'>
+                                        <span class="material-symbols-outlined menu-link-repre-icon">auto_towing</span>
                                         <h2>Maquinaria</h2>
-                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-4'>
+                                        <span class="material-symbols-outlined menu-link-repre-icon">work</span>
                                         <h2>Proyectos</h2>
-                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-5'>
+                                        <span class="material-symbols-outlined menu-link-repre-icon">diversity_3</span>
                                         <h2>Nosotros</h2>
-                                        <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                                        <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <a href='/blog' className='menu-link menu-link-6'>
+                                        <span class="material-symbols-outlined menu-link-repre-icon">newspaper</span>
                                         <h2>Blog</h2>
                                     </a>
                                 </li>
@@ -104,6 +115,7 @@ const Header = () => {
                         <button type='button' className={`menu-icon margin-left ${isMenuActive ? 'active' : ''}`} onClick={menuActive}>
                             <span className="material-symbols-outlined menu-icon-open">menu</span>
                             <span className="material-symbols-outlined menu-icon-close">close</span>
+                            <span className="material-symbols-outlined menu-icon-return">chevron_left</span>
                         </button>
                     </div>
                 </div>
@@ -193,15 +205,24 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='sub-header-container'>
+            <div className={`sub-header-container ${isActive ? 'active' : ''}`}>
                 <div className='sub-header-content'>
-                    <div className='sub-header-target sub-header-target-2'>
+                    <div className='sub-header-target sub-header-target-2 active'>
                         <div className='sub-header-target-column sub-header-target-column-1'>
                             <p className='sub-header-target-title'>Servicios</p>
                             <img src="https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" className='img-simple' alt="Grúas Ememca SAC | Servicios"></img>
 
                             <div className='d-flex-column'>
-                                <p className='text'>gruas ememca leo eloe lloe loelllle a leo leo leonardo favio soplapuco soplopuco</p>
+                                <ul className='list-simple d-flex-column'>
+                                    <li>
+                                        <span className="material-symbols-outlined">check</span>
+                                        <p className='text'>Flota de grúas telescopicas con capacidad de carga de hasta 220 toneladas.</p>
+                                    </li>
+                                    <li>
+                                        <span className="material-symbols-outlined">check</span>
+                                        <p className='text'>Camiones grúa con hasta 120 toneladas de capacidad máxima.</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
@@ -265,7 +286,7 @@ const Header = () => {
                         </div>
 
                         <div className='sub-header-bottom'>
-                            <p className='color-red'>www.gruasememca.com</p>
+                            <p>www.gruasememca.com</p>
                         </div>
                     </div>
                 </div>
