@@ -195,17 +195,28 @@ const Header = () => {
 
             <div className='sub-header-container'>
                 <div className='sub-header-content'>
-                    <div className='sub-header-2'>
-                        <div className='sub-header-target sub-header-target-1'>
-                            <p>Servicios</p>
-                            <h3>
-                                <b>Grúas</b>
-                                <b>Ememca</b>
-                            </h3>
-                            <video src='https://gruasememca.com/media/videos/video-1.webm' autoPlay muted></video>
+                    <div className='sub-header-target sub-header-target-2'>
+                        <div className='sub-header-target-column sub-header-target-column-1'>
+                            <p className='sub-header-target-title'>Servicios</p>
+                            <img src="https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" className='img-simple' alt="1"></img>
+
+                            <div className='d-flex-column'>
+                                <p className='text'>gruas ememca leo eloe lloe loelllle a leo leo leonardo favio soplapuco soplopuco</p>
+                            </div>
                         </div>
-                        <div className='sub-header-target sub-header-target-2 d-flex-column gap-20'>
-                            <h3 className='sub-header-target-title font-family-anton'>Servicios</h3>
+
+                        <div className='sub-header-target-column sub-header-target-column-2'>
+                            <ul className='sub-header-target-column-list'>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-contenedores.png" alt="leoloe"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Izaje de contenedores</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

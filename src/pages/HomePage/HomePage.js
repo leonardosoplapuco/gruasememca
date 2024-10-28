@@ -7,7 +7,9 @@ function HomePage() {
     return (
         <>
             <Header/>
+        
             <main>
+
                 <Hero/>
 
                 <div className='block-container home-page-1'>
@@ -17,7 +19,7 @@ function HomePage() {
                         <div className='d-grid-2-2-1 gap-20'>
                             <div className='d-flex-column gap-10'>
                                 <p className='title color-white'><b className='color-red'>+15 años</b> trabajando con calidad y seguridad trabajando con calidad y seguridad trabajando con calidad y seguridad.</p>
-                                <p className='text color-white'>leosoplapuco | diseño y desarrollo web</p>
+                                <p className='text color-white'>leosoplapuco | diseño y desarrollo web leosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo webleosoplapuco | diseño y desarrollo web</p>
                             </div>
 
                             <video src="https://gruasememca.com/media/videos/video-1.webm" className='video-simple' controls></video>
