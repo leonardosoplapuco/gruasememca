@@ -209,7 +209,7 @@ const Header = () => {
                             <ul className='sub-header-target-column-list'>
                                 <li>
                                     <a href='' className='sub-header-target-column-list-link'>
-                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-contenedores.png" alt="leoloe"></img>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-contenedores-icono.png" alt="leoloe"></img>
                                         <div className='d-flex-column'>
                                             <h4>Izaje de contenedores</h4>
                                             <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
