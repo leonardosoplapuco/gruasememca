@@ -41,6 +41,7 @@ body::-webkit-scrollbar{
     --white-1: #EAEAEA;
 
     --t-100ms: all 100ms linear;
+    --t-300ms: all 300ms linear;
 }
 
 @font-face{

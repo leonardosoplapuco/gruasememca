@@ -44,12 +44,27 @@
 /* Header */
 
 .dark-mode .header-top-logo h2{
-    color: var(--white);
+    color: var(--white-1);
 }
 
 .dark-mode .menu-link h2,
 .dark-mode .menu-link span{
     color: var(--white);
+}
+
+/* Subheader */
+
+.dark-mode .sub-header-target-column-list li:hover{
+    background: var(--white-1);
+}
+
+.dark-mode .sub-header-target-column-list-link div h4{
+    color: var(--white);
+}
+
+.dark-mode .sub-header-target-column-list-link:hover div h4,
+.dark-mode .sub-header-target-column-list-link:hover div p{
+    color: var(--black-5);
 }
 
 /* Hero */
