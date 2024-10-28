@@ -209,9 +209,54 @@ const Header = () => {
                             <ul className='sub-header-target-column-list'>
                                 <li>
                                     <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png" alt="leoloe"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Alquiler de grúas telescópicas</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-camiones-grua-icono.png" alt="leoloe"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Alquiler de camiones grúa</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
                                         <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-contenedores-icono.png" alt="leoloe"></img>
                                         <div className='d-flex-column'>
                                             <h4>Izaje de contenedores</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-maquinaria-icono.png" alt="leoloe"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Izaje de maquinaria</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-tanques-icono.png" alt="leoloe"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Izaje de tanques</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/eliminacion-de-tierra-icono.png" alt="leoloe"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Eliminación de tierra</h4>
                                             <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
                                         </div>
                                     </a>

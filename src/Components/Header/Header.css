@@ -376,6 +376,23 @@ header{
     font-weight: normal;
 }
 
+.sub-header-target-column-list-link{
+    /* background: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sub-header-target-column-list-link img{
+    width: 28px;
+    height: 28px;
+}
+
+.sub-header-target-column-list-link div h4{
+    font-size: 18px;
+    color: var(--black-0);
+}
+
 /**/
 
 @media screen and (max-width:600px){
