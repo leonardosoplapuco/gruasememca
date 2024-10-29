@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 
 const Header = () => {
@@ -9,6 +9,8 @@ const Header = () => {
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
     const [isMenuActive, setIsMenuActive] = useState(false);
     const [isSubMenuActive, setIsSubMenuActive] = useState(false);
+
+    const menuLinkRef = useRef(null);
 
     const handleMenuLinkClick = () => {
         setIsActive(!isActive);
@@ -58,6 +60,13 @@ const Header = () => {
     };
 
     useEffect(() => {
+        if (!isMenuActive || !isSubMenuActive) {
+            setIsActive(false);
+            menuLinkRef.current?.classList.remove('active');
+        }
+    }, [isMenuActive, isSubMenuActive]);
+
+    useEffect(() => {
         if (isDarkMode) {
             document.body.classList.add('dark-mode');
         } else {
@@ -83,7 +92,7 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={() => { handleSubMenuClick(); handleMenuLinkClick();}}>
+                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={() => { handleSubMenuClick(); handleMenuLinkClick();}} ref={menuLinkRef}>
                                         <span className="material-symbols-outlined menu-link-repre-icon">handshake</span>
                                         <h2>Servicios</h2>
                                         <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
@@ -275,7 +284,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <a href='' className='sub-header-target-column-list-link'>
-                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/eliminacion-de-maquinaria-icono.png" alt="icono de excavadora"></img>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-maquinaria-icono.png" alt="icono de excavadora"></img>
                                         <div className='d-flex-column'>
                                             <h4>Izaje de maquinaria</h4>
                                             <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>

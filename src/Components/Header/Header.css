@@ -416,7 +416,7 @@ header{
 
 .sub-header-target-column-list li{
     flex: 1 1 clamp(250px, calc(calc(100% / 3) - calc(20px / 3)), 100%);
-    max-width: 400px;
+    max-width: calc(calc(100% / 3) - calc(20px / 3));
     padding: 10px;
     border-radius: 5px;
     transition: var(--t-100ms);
@@ -509,7 +509,8 @@ header{
         color: var(--black-2);
         transition: var(--t-100ms);
     }
-    .menu-link:hover .menu-link-repre-icon{
+    .menu-link:hover .menu-link-repre-icon,
+    .menu-link.active .menu-link-repre-icon{
         color: var(--red);
     }
     .menu-link-arrow{
@@ -576,6 +577,7 @@ header{
     }
     .sub-header-target-column-list li{
         flex: 1 1 clamp(150px, calc(calc(100% / 2) - calc(10px / 2)), 100%);
+        max-width: none;
     }
     .sub-header-target-column-list-link img{
         width: 32px;
