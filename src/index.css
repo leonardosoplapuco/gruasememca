@@ -253,6 +253,12 @@ button{
     justify-content: left;
 }
 
+.d-flex-justify-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .d-flex-wrap{
     flex-wrap: wrap;
 }

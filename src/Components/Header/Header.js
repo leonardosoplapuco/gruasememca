@@ -8,9 +8,18 @@ const Header = () => {
     const [isThemesActive, setIsThemesActive] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
     const [isMenuActive, setIsMenuActive] = useState(false);
+    const [isSubMenuActive, setIsSubMenuActive] = useState(false);
 
     const handleMenuLinkClick = () => {
         setIsActive(!isActive);
+    };
+
+    const handleSubMenuClick = () => {
+        setIsSubMenuActive(!isSubMenuActive);
+    };
+
+    const handleSubHeaderReturnClick = () => {
+        setIsSubMenuActive(false);
     };
 
     const toggleLocations = () => {
@@ -43,6 +52,9 @@ const Header = () => {
 
     const menuActive = () => {
         setIsMenuActive(!isMenuActive);
+        if (isMenuActive) {
+            setIsSubMenuActive(false);
+        }
     };
 
     useEffect(() => {
@@ -62,45 +74,45 @@ const Header = () => {
                             <h2>Grúas <b>Ememca</b></h2>
                         </a>
 
-                        <nav className='header-menu-container'>
+                        <nav className={`header-menu-container ${isMenuActive ? 'active' : ''}`}>
                             <ul className='header-menu'>
                                 <li>
                                     <a href='/' className='menu-link menu-link-1'>
-                                        <span class="material-symbols-outlined menu-link-repre-icon">home</span>
+                                        <span className="material-symbols-outlined menu-link-repre-icon">home</span>
                                         <h2>Inicio</h2>
                                     </a>
                                 </li>
                                 <li>
-                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={handleMenuLinkClick}>
-                                        <span class="material-symbols-outlined menu-link-repre-icon">handshake</span>
+                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={() => { handleSubMenuClick(); handleMenuLinkClick();}}>
+                                        <span className="material-symbols-outlined menu-link-repre-icon">handshake</span>
                                         <h2>Servicios</h2>
                                         <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-3'>
-                                        <span class="material-symbols-outlined menu-link-repre-icon">auto_towing</span>
+                                        <span className="material-symbols-outlined menu-link-repre-icon">auto_towing</span>
                                         <h2>Maquinaria</h2>
                                         <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-4'>
-                                        <span class="material-symbols-outlined menu-link-repre-icon">work</span>
+                                        <span className="material-symbols-outlined menu-link-repre-icon">work</span>
                                         <h2>Proyectos</h2>
                                         <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button type='button' className='menu-link menu-link-5'>
-                                        <span class="material-symbols-outlined menu-link-repre-icon">diversity_3</span>
+                                        <span className="material-symbols-outlined menu-link-repre-icon">diversity_3</span>
                                         <h2>Nosotros</h2>
                                         <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
                                     </button>
                                 </li>
                                 <li>
                                     <a href='/blog' className='menu-link menu-link-6'>
-                                        <span class="material-symbols-outlined menu-link-repre-icon">newspaper</span>
+                                        <span className="material-symbols-outlined menu-link-repre-icon">newspaper</span>
                                         <h2>Blog</h2>
                                     </a>
                                 </li>
@@ -115,7 +127,6 @@ const Header = () => {
                         <button type='button' className={`menu-icon margin-left ${isMenuActive ? 'active' : ''}`} onClick={menuActive}>
                             <span className="material-symbols-outlined menu-icon-open">menu</span>
                             <span className="material-symbols-outlined menu-icon-close">close</span>
-                            <span className="material-symbols-outlined menu-icon-return">chevron_left</span>
                         </button>
                     </div>
                 </div>
@@ -205,11 +216,18 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={`sub-header-container ${isActive ? 'active' : ''}`}>
+            <div className={`sub-header-container ${isSubMenuActive ? 'active' : ''}`}>
                 <div className='sub-header-content'>
                     <div className='sub-header-target sub-header-target-2 active'>
                         <div className='sub-header-target-column sub-header-target-column-1'>
-                            <p className='sub-header-target-title'>Servicios</p>
+                            <div className='d-flex-justify-between gap-10'>
+                                <p className='sub-header-target-title'>Servicios</p>
+
+                                <button type='button' className='sub-header-target-return' onClick={handleSubHeaderReturnClick}>
+                                    <span className="material-symbols-outlined menu-icon-return">chevron_left</span>
+                                </button>
+                            </div>
+
                             <img src="https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" className='img-simple' alt="Grúas Ememca SAC | Servicios"></img>
 
                             <div className='d-flex-column'>
@@ -257,7 +275,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <a href='' className='sub-header-target-column-list-link'>
-                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/eliminacion-de-tierra-icono.png" alt="icono de excavadora"></img>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/eliminacion-de-maquinaria-icono.png" alt="icono de excavadora"></img>
                                         <div className='d-flex-column'>
                                             <h4>Izaje de maquinaria</h4>
                                             <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
@@ -269,6 +287,15 @@ const Header = () => {
                                         <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-tanques-icono.png" alt="icono de tanque"></img>
                                         <div className='d-flex-column'>
                                             <h4>Izaje de tanques</h4>
+                                            <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='' className='sub-header-target-column-list-link'>
+                                        <img src="https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-postes-icono.png" alt="icono de excavadora"></img>
+                                        <div className='d-flex-column'>
+                                            <h4>Izaje de postes</h4>
                                             <p className='text'>gruas ememca leonardo favio soplapuco soplopuco</p>
                                         </div>
                                     </a>
