@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
@@ -9,8 +9,6 @@ const Header = () => {
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
     const [isMenuActive, setIsMenuActive] = useState(false);
     const [isSubMenuActive, setIsSubMenuActive] = useState(false);
-
-    const menuLinkRef = useRef(null);
 
     const handleMenuLinkClick = () => {
         setIsActive(!isActive);
@@ -60,13 +58,6 @@ const Header = () => {
     };
 
     useEffect(() => {
-        if (!isMenuActive || !isSubMenuActive) {
-            setIsActive(false);
-            menuLinkRef.current?.classList.remove('active');
-        }
-    }, [isMenuActive, isSubMenuActive]);
-
-    useEffect(() => {
         if (isDarkMode) {
             document.body.classList.add('dark-mode');
         } else {
@@ -92,7 +83,7 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={() => { handleSubMenuClick(); handleMenuLinkClick();}} ref={menuLinkRef}>
+                                    <button type='button' className={`menu-link menu-link-2 ${isActive ? 'active' : ''}`} onClick={() => { handleSubMenuClick(); handleMenuLinkClick();}}>
                                         <span className="material-symbols-outlined menu-link-repre-icon">handshake</span>
                                         <h2>Servicios</h2>
                                         <span className="material-symbols-outlined menu-link-arrow">keyboard_arrow_down</span>
