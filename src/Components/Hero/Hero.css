@@ -213,6 +213,10 @@
     .hero-card{
         grid-template-columns: 1fr 130px;
     }
+    .hero-cards-container{
+        height: 230px;
+        /* min-height: 200px; */
+    }
     .hero-card-content .card-title{
         font-size: 18px;
     }

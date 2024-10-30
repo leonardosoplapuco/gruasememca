@@ -23,6 +23,7 @@ body::-webkit-scrollbar{
 :root{
     --body: #F8F9FA;
     --header: #FFFFFF;
+    --footer: #000000;
 
     --white: #FFFFFF;
     --red: #DA111D;
@@ -63,6 +64,10 @@ body::-webkit-scrollbar{
 body{
     background: var(--body);
     color: var(--text);
+}
+
+main{
+    margin-top: 124px;
 }
 
 .text{
@@ -345,6 +350,10 @@ button{
 @media screen and (max-width:600px){
     *{
         font-size: 15px;
+    }
+
+    main{
+        margin-top: 118px;
     }
 
     .title,
