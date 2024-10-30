@@ -124,6 +124,11 @@ const Header = () => {
                             <span className="material-symbols-outlined">mail</span>
                         </a>
 
+                        <a className='link link-3 header-top-contact'>
+                            <h2 className='link-text'>Contáctanos</h2>
+                            <span className="material-symbols-outlined">mail</span>
+                        </a>
+
                         <button type='button' className={`menu-icon margin-left ${isMenuActive ? 'active' : ''}`} onClick={menuActive}>
                             <span className="material-symbols-outlined menu-icon-open">menu</span>
                             <span className="material-symbols-outlined menu-icon-close">close</span>

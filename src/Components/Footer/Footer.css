@@ -1,0 +1,12 @@
+footer{
+    width: 100%;
+    background: var(--footer);
+    padding: 20px;
+    display: flex;
+}
+
+.footer{
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+}
