@@ -1,10 +1,11 @@
 import './Services.css';
 
-import Header from '../../Components/Header/Header';
+// import Header from '../../Components/Header/Header';
 
 function Services() {
     return (
-        <Header/>
+        // <Header/>
+        <p>asassa</p>
     );
 }
 

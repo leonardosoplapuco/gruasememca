@@ -1,6 +1,7 @@
 .dark-mode{
     --body: #212121;
     --header: #000000;
+    --subheader: #333333;
 
     --white: #FFFFFF;
     --red: #EE2532;
@@ -16,7 +17,7 @@
 }
 
 .dark-mode .link-1:hover{
-    background: #FFFFFF35;
+    background: rgba(235 235 235 / 0.25);
 }
 
 .dark-mode .link-1 .link-text,
@@ -24,96 +25,82 @@
     color: var(--white);
 }
 
-.dark-mode .link-3.active,
-.dark-mode .link-3:hover{
-    background: #FFFFFF35;
-}
+/**/
 
-.dark-mode .link-3 .link-text,
-.dark-mode .link-3 span{
-    color: var(--black-9);
-}
-
-.dark-mode .link-3.active .link-text,
-.dark-mode .link-3:hover .link-text,
-.dark-mode .link-3.active span,
-.dark-mode .link-3:hover span{
+.dark-mode .header-logo h2{
     color: var(--white);
 }
 
-/* Header */
-
-.dark-mode .header-top-logo h2{
-    color: var(--white-1);
-}
+/**/
 
 .dark-mode .menu-link h2,
 .dark-mode .menu-link span{
+    color: var(--black-9);
+}
+
+.dark-mode .menu-link:hover h2,
+.dark-mode .menu-link.active h2,
+.dark-mode .menu-link:hover span,
+.dark-mode .menu-link.active span{
     color: var(--white);
 }
 
-.dark-mode .menu-link.active .menu-link-arrow,
-.dark-mode .menu-link:hover .menu-link-arrow{
-    opacity: 1;
+.dark-mode .menu-link.active .menu-link-chevron-right{
     color: var(--white);
 }
 
-/* Subheader */
+/**/
 
-.dark-mode .sub-header-target-column-list li:hover{
-    background: var(--white-1);
+.dark-mode .locations-button.active,
+.dark-mode .locations-button:hover,
+.dark-mode .translate-button.active,
+.dark-mode .translate-button:hover{
+    background: rgba(235 235 235 / 0.25);
 }
 
-.dark-mode .sub-header-target-column-list-link div h4{
+.dark-mode .locations-button:hover span,
+.dark-mode .locations-button:hover p,
+.dark-mode .locations-button.active span,
+.dark-mode .locations-button.active p,
+.dark-mode .translate-button:hover span,
+.dark-mode .translate-button:hover p,
+.dark-mode .translate-button.active span,
+.dark-mode .translate-button.active p{
     color: var(--white);
 }
 
-.dark-mode .sub-header-target-column-list-link:hover div h4,
-.dark-mode .sub-header-target-column-list-link:hover div p{
-    color: var(--black-5);
+.dark-mode .header-bottom-button-selection ul li a:hover,
+.dark-mode .header-bottom-button-selection ul li button:hover{
+    background: rgba(235 235 235 / 0.25);
 }
 
-/* Hero */
+.dark-mode .header-bottom-button-selection ul{
+    border: 1px solid var(--black-3);
+}
 
-.dark-mode .hero-target-1 h1{
+.dark-mode .header-bottom-button-selection ul li a:hover p,
+.dark-mode .header-bottom-button-selection ul li a:hover span,
+.dark-mode .header-bottom-button-selection ul li button:hover p,
+.dark-mode .header-bottom-button-selection ul li button:hover span{
     color: var(--white);
 }
 
-.dark-mode .hero-card{
-    background: var(--black-3);
-    border: none;
+/**/
+
+.dark-mode .search-bar-container input:focus{
+    border: 2px solid var(--white);
 }
 
-.dark-mode .hero-card div{
-    border-left: none;
-}
-
-.dark-mode .hero-card-content .card-title{
-    color: var(--white-1);
-}
-
-.dark-mode .hero-card-content .simple-link .simple-link-text,
-.dark-mode .hero-card-content .simple-link span{
+.dark-mode .search-bar-container input{
     color: var(--white);
 }
 
-.dark-mode .hero-card-button{
-    background: none;
-    border: 1px solid var(--white);
+/**/
+
+.dark-mode .dark-button{
+    background: var(--black-4);
 }
 
-.dark-mode .hero-card-button span{
+.dark-mode .dark-button span{
     color: var(--white);
-    
-}
-
-.dark-mode .hero-card-button:hover,
-.dark-mode .hero-card-button.active{
-    background: var(--white);
-    border: 0;
-}
-
-.dark-mode .hero-card-button:hover span,
-.dark-mode .hero-card-button.active span{
-    color: var(--black-3);
 }

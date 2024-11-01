@@ -1,10 +1,11 @@
 import './Machines.css';
 
-import Header from '../../Components/Header/Header';
+// import Header from '../../Components/Header/Header';
 
 function Machines() {
     return (
-        <Header/>
+        // <Header/>
+        <p>assa</p>
     );
 }
 

@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 import './Blog.css';
 
-import Header from '../../Components/Header/Header';
+// import Header from '../../Components/Header/Header';
 
 function Blog() {
     return (
@@ -23,7 +23,7 @@ function Blog() {
                 <meta name="twitter:image" content="URL-de-imagen-de-servicios.jpg" />
             </Helmet>
 
-            <Header/>
+            {/* <Header/> */}
 
             <main>
                 <p>Blog</p>
