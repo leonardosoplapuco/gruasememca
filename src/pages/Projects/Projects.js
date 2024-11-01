@@ -1,10 +1,11 @@
 import './Projects.css';
 
-import Header from '../../Components/Header/Header';
+// import Header from '../../Components/Header/Header';
 
 function Projects() {
     return (
-        <Header/>
+        // <Header/>
+        <p>asas</p>
     );
 }
 

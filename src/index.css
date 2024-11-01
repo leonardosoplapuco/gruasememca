@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Roobert', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -23,6 +23,7 @@ body::-webkit-scrollbar{
 :root{
     --body: #F8F9FA;
     --header: #FFFFFF;
+    --subheader: #FFFFFF;
     --footer: #000000;
 
     --white: #FFFFFF;
@@ -37,6 +38,8 @@ body::-webkit-scrollbar{
     --black-3: #333333;
     --black-4: #444444;
     --black-5: #555555;
+    --black-6: #666666;
+    --black-7: #777777;
     --black-9: #999999;
 
     --white-1: #EAEAEA;
@@ -64,11 +67,16 @@ body::-webkit-scrollbar{
 body{
     background: var(--body);
     color: var(--text);
+    transition: var(--t-100ms);
 }
+
+/**/
 
 main{
     margin-top: 124px;
 }
+
+/**/
 
 .text{
     color: var(--text);
@@ -80,6 +88,16 @@ main{
 
 .color-red{
     color: var(--red);
+}
+
+/**/
+
+.t-100ms{
+    transition: var(--t-100ms);
+}
+
+.t-300ms{
+    transition: var(--t-300ms);
 }
 
 /**/
@@ -99,13 +117,14 @@ main{
 .title,
 .title b,
 .title span{
-    font-size: 48px;
+    font-size: 32px;
+    transition: var(--t-100ms);
 }
 
 .card-title,
 .card-title b,
 .card-title span{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .card-icon{
@@ -142,6 +161,7 @@ main{
 
 .list-simple li span{
     color: #34A853;
+    font-size: 22px;
 }
 
 /**/
@@ -158,7 +178,7 @@ button{
     cursor: pointer;
     width: auto;
     padding: 10px 20px;
-    min-height: 44px;
+    height: 44px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -167,12 +187,21 @@ button{
     gap: 10px;
 }
 
+.link .link-text,
+.link span{
+    transition: var(--t-100ms);
+}
+
+.link-height-auto{
+    min-height: 44px;
+}
+
 .link-1{
     border: 1px solid var(--red);
 }
 
 .link-1:hover{
-    background: #DA111D15;
+    background: rgba(218 17 29 / 0.075);
 }
 
 .link-1 .link-text,
@@ -206,10 +235,31 @@ button{
     color: var(--red);
 }
 
+.link-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background: var(--white-1);
+    position: relative;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+}
+
+.link-icon span{
+    transition: var(--t-100ms);
+    color: var(--black-0);
+}
+
 /**/
 
+.call-button{
+    transition: var(--t-100ms);
+}
+
 .call-button:hover .material-symbols-outlined{
-    animation: shake 0.5s ease-in-out infinite;
+    animation: shake 1s ease-in-out infinite;
+    scale: 1.05;
 }
 
 @keyframes shake{
@@ -223,7 +273,7 @@ button{
         rotate: -5deg;
     }
     75%, 100%{
-        rotate: 0;
+        rotate: 5deg;
     }
 }
 
@@ -252,6 +302,12 @@ button{
     flex-direction: column;
 }
 
+.d-flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .d-flex-center-left{
     display: flex;
     align-items: center;
@@ -269,6 +325,10 @@ button{
 }
 
 /**/
+
+.d-grid{
+    display: grid;
+}
 
 .d-grid-2-2-1{
     display: grid;
@@ -359,13 +419,13 @@ button{
     .title,
     .title b,
     .title span{
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .card-title,
     .card-title b,
     .card-title span{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .d-grid-2-2-1{

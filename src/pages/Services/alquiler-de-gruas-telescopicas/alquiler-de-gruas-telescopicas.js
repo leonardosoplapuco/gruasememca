@@ -1,11 +1,11 @@
 // import './Services.css';
 
-import Header from '../../../Components/Header/Header';
+// import Header from '../../../Components/Header/Header';
 
 function Page() {
     return (
         <>
-            <Header/>
+            {/* <Header/> */}
 
             <main>
                 <p>Alquiler de grúas telescópicas</p>

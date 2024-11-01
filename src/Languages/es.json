@@ -1,0 +1,136 @@
+{
+    "Menu":[
+        {
+            "id": 1,
+            "text": "Inicio",
+            "url": "/",
+            "icon": "home"
+        },
+        {
+            "id": 2,
+            "text": "Servicios",
+            "icon": "handshake"
+        },
+        {
+            "id": 3,
+            "text": "Maquinaria",
+            "icon": "auto_towing"
+        },
+        {
+            "id": 4,
+            "text": "Proyectos",
+            "url": "/proyectos",
+            "icon": "work"
+        },
+        {
+            "id": 5,
+            "text": "Nosotros",
+            "url": "/nosotros",
+            "icon": "diversity_3"
+        },
+        {
+            "id": 6,
+            "text": "Blog",
+            "url": "/blog",
+            "icon": "newspaper"
+        }
+    ],
+    "HederContactLinks":[
+        {
+            "id": 1,
+            "text": "contacto@gruasememca.com",
+            "url": "mailto: contacto@gruasememca.com"
+        },
+        {
+            "id": 2,
+            "text": "Llamar ahora",
+            "url": "tel: +51998877665"
+        }
+    ],
+    "HeaderButtons":[
+        {
+            "id": 1,
+            "text": "Ubícanos"
+        },
+        {
+            "id": 2,
+            "text": "Buscar en gruasememca.com"
+        },
+        {
+            "id": 3,
+            "text": "Idioma"
+        }
+    ],
+    "SubHeader":[
+        {
+            "id": 1,
+            "title": "Servicios",
+            "blockOne":[
+                {
+                    "img-src": "https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp",
+                    "list":[
+                        {
+                            "id": 1,
+                            "text": "Contamos con nuestra propia flota de grúas telescopicas con capacidad de carga de hasta 220 toneladas."
+                        },
+                        {
+                            "id": 2,
+                            "text": "Camiones grúa con capacidad de carga de hasta 120 toneladas."
+                        }
+                    ]
+                }
+            ],
+            "blockTwo":[
+                {
+                    "id": 1,
+                    "url": "/servicios/alquiler-de-gruas-telescopicas",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
+                    "title": "Alquiler de grúas teléscopicas",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 2,
+                    "url": "/servicios/alquiler-de-camiones-grua",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-camiones-grua-icono.png",
+                    "title": "Alquiler de camiones grúas",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 3,
+                    "url": "/servicios/servicios-de-izaje/izaje-de-contenedores",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-contenedores-icono.png",
+                    "title": "Izaje de contenedores",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 4,
+                    "url": "/servicios/servicios-de-izaje/izaje-de-maquinaria",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-maquinaria-icono.png",
+                    "title": "Izaje de maquinaria",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 5,
+                    "url": "/servicios/servicios-de-izaje/izaje-de-tanques",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-tanques-icono.png",
+                    "title": "Izaje de tanques",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 6,
+                    "url": "/servicios/servicios-de-izaje/izaje-de-postes",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/izaje-de-postes-icono.png",
+                    "title": "Izaje de postes",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 7,
+                    "url": "/servicios/eliminacion-de-tierra",
+                    "iconSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/eliminacion-de-tierra-icono.png",
+                    "title": "Eliminación de tierra",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                }
+            ]
+        }
+    ]
+}
