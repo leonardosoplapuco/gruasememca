@@ -251,6 +251,16 @@ const Header = () => {
 
                     <div className='sub-header-2-target'>
                         <p className='text'>{t('SubHeader.1.text')}</p>
+
+                        <ul className='d-flex d-flex-wrap gap-20'>
+                            {t('SubHeader.1.machinery', { returnObjects: true }).map((subHeaderMachinery) => (
+                                <li key={subHeaderMachinery.id}>
+                                    <div>
+                                        <img src={subHeaderMachinery.imgSrc} alt={subHeaderMachinery.imgAlt}></img>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </section>
             </div>
