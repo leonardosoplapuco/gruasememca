@@ -130,6 +130,40 @@
                     "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 }
             ]
+        },
+        {
+            "id": 2,
+            "title": "Machinery",
+            "text": "texto breve referente a la maquinaria de gruasememca.com"
         }
-    ]
+    ],
+    "Hero":{
+        "h1":{
+            "h1-1": "Telescopic",
+            "h1-2": "crane rental"
+        },
+        "list":{
+            "text-1": "With more than 15 years of experience in the sector in crane rental, lifting and earth removal services.",
+            "text-2": "Our commitment to quality and safety sets us apart, offering customized solutions that adapt to the needs of each project."
+        },
+        "links":{
+            "link-1": "More about us",
+            "link-2": "Call us now"
+        }
+    },
+    "Nosotros":{
+        "Head":{
+            "title": "About us | Grúas Ememca SAC",
+            "meta-description": "Descripción de la página de Nosotros.",
+            "link-canonical": "https://www.gruasememca.com/about-us",
+            "meta-og-title": "Nosotros | Grúas Ememca SAC",
+            "meta-og-description": "Descripción de la página de Nosotros.",
+            "meta-og-image": "url",
+            "meta-og-url": "https://www.gruasememca.com/about-us",
+            "meta-twitter-card": "summary_large_image",
+            "meta-twitter-title": "Nosotros | Grúas Ememca SAC",
+            "meta-twitter-description": "Descripción de la página de Nosotros.",
+            "meta-twitter-image": "url"
+        }
+    }
 }

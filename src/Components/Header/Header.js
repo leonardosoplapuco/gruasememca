@@ -66,6 +66,12 @@ const Header = () => {
 
     /**/
 
+    const handleCloseSubHeader = () => {
+        setActiveMenu(null); // Esto desactiva cualquier menú activo, incluyendo `menu-link-2`, `menu-link-3`, `menu-link-4`
+    };
+
+    /**/
+
     return(
         <>
             <header>
@@ -90,7 +96,7 @@ const Header = () => {
                                             <a href={menuLink.url} className={`menu-link menu-link-${menuLink.id}`}>
                                                 <span className="material-symbols-outlined menu-link-icon-representation">{menuLink.icon}</span>
                                                 <h2>{menuLink.text}</h2>
-                                                <span className="material-symbols-outlined menu-link-chevron-right">chevron_right</span>
+                                                <span className="material-symbols-outlined menu-link-chevron-right">arrow_forward</span>
                                             </a>
                                         )}
                                     </li>
@@ -190,12 +196,12 @@ const Header = () => {
                 </div>
             </header>
 
-            <div className='sub-header-container sub-header-container-1'>
+            <div className={`sub-header-container sub-header-container-1 ${activeMenu === 2 ? 'active' : ''}`}>
                 <section className='sub-header sub-header-1 d-grid gap-10'>
                     <div className='d-flex-justify-between'>
                         <h3 className='title font-family-anton'>{t('SubHeader.0.title')}</h3>
 
-                        <button type='button' className='link link-icon'>
+                        <button type='button' className='button button-simple close-sub-header-container' onClick={handleCloseSubHeader}>
                             <span className="material-symbols-outlined">chevron_left</span>
                         </button>
                     </div>
@@ -232,6 +238,24 @@ const Header = () => {
                     </div>
                 </section>
             </div>
+
+            <div className={`sub-header-container sub-header-container-2 ${activeMenu === 3 ? 'active' : ''}`}>
+                <section className='sub-header sub-header-2 d-grid gap-10'>
+                    <div className='d-flex-justify-between'>
+                        <h3 className='title font-family-anton'>{t('SubHeader.1.title')}</h3>
+
+                        <button type='button' className='button button-simple close-sub-header-container' onClick={handleCloseSubHeader}>
+                            <span className="material-symbols-outlined">chevron_left</span>
+                        </button>
+                    </div>
+
+                    <div className='sub-header-2-target'>
+                        <p className='text'>{t('SubHeader.1.text')}</p>
+                    </div>
+                </section>
+            </div>
+
+            <div className='sub-header-layer'></div>
         </>
     );
 }

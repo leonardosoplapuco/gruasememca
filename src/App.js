@@ -6,8 +6,6 @@ import i18n from './i18next';
 import HomePage from './pages/HomePage/HomePage';
 import Services from './pages/Services/Services';
 
-import Page from './pages/Services/alquiler-de-gruas-telescopicas/alquiler-de-gruas-telescopicas';
-
 import Machines from './pages/Machines/Machines';
 import Projects from './pages/Projects/Projects';
 import Us from './pages/Us/Us';
@@ -16,7 +14,7 @@ import Article from './pages/Blog/Article/Article';
 
 import Contact from './pages/Contact/Contact';
 
-function App() {
+function App(){
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
     i18n.changeLanguage(savedLanguage);
 
@@ -29,10 +27,7 @@ function App() {
 
                         <Route path="/servicios" Component={Services} />
                         <Route path="/services" Component={Services} />
-
-                        <Route path="/servicios/alquiler-de-gruas-telescopicas" Component={Page} />
-                        <Route path="/services/telescopic-crane-rental" Component={Page} />
-
+                        
                         <Route path="/maquinaria" Component={Machines} />
                         <Route path="/machinery" Component={Machines} />
 

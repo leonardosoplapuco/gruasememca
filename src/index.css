@@ -251,6 +251,21 @@ button{
     color: var(--black-0);
 }
 
+.button-simple{
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-simple span{
+    margin: auto;
+    color: var(--text);
+    font-size: 36px
+}
+
 /**/
 
 .call-button{
@@ -413,7 +428,7 @@ button{
     }
 
     main{
-        margin-top: 118px;
+        margin-top: 128px;
     }
 
     .title,
