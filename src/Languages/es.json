@@ -131,6 +131,41 @@
                     "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 }
             ]
+        },
+        {
+            "id": 2,
+            "title": "Maquinaria",
+            "text": "texto breve referente a la maquinaria de gruasememca.com"
         }
-    ]
+    ],
+    "Hero":{
+        "h1":{
+            "h1-1": "Alquiler de",
+            "h1-2": "grúas telescópicas"
+        },
+        "list":{
+            "text-1": "Con más de 15 años de experiencia en el sector en servicios de alquiler de grúas, izajes y eliminación de tierra.",
+            "text-2": "Nuestro compromiso con la calidad y la seguridad nos distingue, ofreciendo soluciones personalizadas que se adaptan a las necesidades de cada proyecto."
+        },
+        "links":{
+            "link-1": "Sobre nosotros",
+            "link-2": "Llamar ahora"
+        }
+    }
+    ,
+    "Nosotros":{
+        "Head":{
+            "title": "Nosotros | Grúas Ememca SAC",
+            "meta-description": "Descripción de la página de Nosotros.",
+            "link-canonical": "https://www.gruasememca.com/nosotros",
+            "meta-og-title": "Nosotros | Grúas Ememca SAC",
+            "meta-og-description": "Descripción de la página de Nosotros.",
+            "meta-og-image": "url",
+            "meta-og-url": "https://www.gruasememca.com/nosotros",
+            "meta-twitter-card": "summary_large_image",
+            "meta-twitter-title": "Nosotros | Grúas Ememca SAC",
+            "meta-twitter-description": "Descripción de la página de Nosotros.",
+            "meta-twitter-image": "url"
+        }
+    }
 }
