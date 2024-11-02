@@ -135,7 +135,17 @@
         {
             "id": 2,
             "title": "Maquinaria",
-            "text": "texto breve referente a la maquinaria de gruasememca.com"
+            "text": "texto breve referente a la maquinaria de gruasememca.com",
+            "machinery":[
+                {
+                    "id": 1,
+                    "imgSrc": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
+                    "imgAlt": "PPM 40 PPM ATT 400",
+                    "name": "PPM 40 PPM ATT 400",
+                    "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
+                    "url": "/maquinaria/grua-telescopica-1"
+                }
+            ]
         }
     ],
     "Hero":{
