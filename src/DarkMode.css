@@ -108,7 +108,7 @@
 /**/
 
 .dark-mode .sub-header-1-target-target-2 ul li a:hover{
-    background: rgba(235 235 235 / 1);
+    background: var(--white-1);
 }
 
 .dark-mode .sub-header-1-target-target-2 ul li a img{
@@ -136,3 +136,64 @@
 }
 
 /**/
+
+.dark-mode .sub-header-machinery ul li > div{
+    background: var(--black-3);
+}
+
+.dark-mode .sub-header-machinery ul li > div:hover{
+    background: var(--white-1);
+}
+
+.dark-mode .sub-header-machinery ul li > div img{
+    filter: brightness(10000%);
+}
+
+.dark-mode .sub-header-machinery ul li > div:hover img{
+    filter: unset;
+}
+
+.dark-mode .sub-header-machinery ul li > div > div .card-title{
+    color: var(--text);
+}
+
+.dark-mode .sub-header-machinery ul li > div:hover > div .card-title{
+    color: var(--black-0);
+}
+
+.dark-mode .sub-header-machinery ul li > div > div .text{
+    color: var(--text);
+}
+
+.dark-mode .sub-header-machinery ul li > div:hover > div .text{
+    color: var(--black-5);
+}
+
+/**/
+
+.sub-header-3 ul li a{
+    background: var(--black-3);
+}
+
+.dark-mode .sub-header-3 ul li a:hover{
+    background: var(--white-1);
+}
+
+.sub-header-3 ul li a .card-title{
+    color: var(--white);
+}
+
+.dark-mode .sub-header-3 ul li a:hover .card-title{
+    color: var(--black-0);
+}
+
+.dark-mode .sub-header-3 ul li a:hover .text{
+    color: var(--black-5);
+}
+
+@media screen and (max-width: 600px){
+    .dark-mode .menu-link:hover,
+    .dark-mode .menu-link.active{
+        background: rgba(235 235 325 / 0.15);
+    }
+}
