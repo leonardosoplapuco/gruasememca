@@ -139,11 +139,91 @@
             "machinery":[
                 {
                     "id": 1,
-                    "imgSrc": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
                     "imgAlt": "PPM 40 PPM ATT 400",
                     "name": "PPM 40 PPM ATT 400",
                     "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
                     "url": "/maquinaria/grua-telescopica-1"
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
+                    "imgAlt": "PPM 40 PPM ATT 400",
+                    "name": "PPM 40 PPM ATT 400",
+                    "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
+                    "url": "/maquinaria/grua-telescopica-1"
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
+                    "imgAlt": "PPM 40 PPM ATT 400",
+                    "name": "PPM 40 PPM ATT 400",
+                    "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
+                    "url": "/maquinaria/grua-telescopica-1"
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
+                    "imgAlt": "PPM 40 PPM ATT 400",
+                    "name": "PPM 40 PPM ATT 400",
+                    "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
+                    "url": "/maquinaria/grua-telescopica-1"
+                },
+                {
+                    "id": 5,
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
+                    "imgAlt": "PPM 40 PPM ATT 400",
+                    "name": "PPM 40 PPM ATT 400",
+                    "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
+                    "url": "/maquinaria/grua-telescopica-1"
+                },
+                {
+                    "id": 6,
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Header/alquiler-de-gruas-telescopicas-icono.png",
+                    "imgAlt": "PPM 40 PPM ATT 400",
+                    "name": "PPM 40 PPM ATT 400",
+                    "text": "grúa americana bla bla bla bla bla petrolera con motor Cummis americano",
+                    "url": "/maquinaria/grua-telescopica-1"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Projects",
+            "projects":[
+                {
+                    "id": 1,
+                    "url": "/project/project-1",
+                    "category": "Rental",
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp",
+                    "title": "Proyecto 1",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                },
+                {
+                    "id": 2,
+                    "url": "/project/project-1",
+                    "category": "Lifting",
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp",
+                    "title": "Proyecto 1",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                }
+                ,
+                {
+                    "id": 3,
+                    "url": "/project/project-1",
+                    "category": "Lifting",
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp",
+                    "title": "Proyecto 1",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                }
+                ,
+                {
+                    "id": 4,
+                    "url": "/project/project-1",
+                    "category": "Lifting",
+                    "imgSrc": "https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp",
+                    "title": "Proyecto 1",
+                    "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 }
             ]
         }

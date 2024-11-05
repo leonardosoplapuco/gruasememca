@@ -1,0 +1,39 @@
+.hero-container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.hero{
+    margin: auto;
+    width: 100%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.hero-card{
+    width: 100%;
+}
+
+.hero-card-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-card-1 h1,
+.hero-card-1 h1 b{
+    font-size: 44px;
+    font-family: 'Anton';
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.hero-card-1 h1{
+    color: var(--black-0);
+}
+
+.hero-card-1 h1 b{
+    color: var(--red);
+}

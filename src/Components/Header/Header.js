@@ -66,8 +66,16 @@ const Header = () => {
 
     /**/
 
+    const [isMenuActive, setIsMenuActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuActive(prev => !prev);
+    };
+
+    /**/
+
     const handleCloseSubHeader = () => {
-        setActiveMenu(null); // Esto desactiva cualquier menú activo, incluyendo `menu-link-2`, `menu-link-3`, `menu-link-4`
+        setActiveMenu(null);
     };
 
     /**/
@@ -82,7 +90,7 @@ const Header = () => {
                             <h2>GRÚAS <b>EMEMCA</b></h2>
                         </a>
 
-                        <nav className='menu-container'>
+                        <nav className={`menu-container ${isMenuActive ? 'active' : ''}`}>
                             <ul className='menu'>
                                 {t('Menu', { returnObjects: true }).map((menuLink) => (
                                     <li key={menuLink.id}>
@@ -124,8 +132,9 @@ const Header = () => {
                             </ul>
                         </nav>
 
-                        <button type='button' className='menu-icon link-icon'>
-                            <span className="material-symbols-outlined">menu</span>
+                        <button type='button'className={`menu-icon link-icon ${isMenuActive ? 'active' : ''}`} onClick={toggleMenu}>
+                            <span className="material-symbols-outlined close">close</span>
+                            <span className="material-symbols-outlined hamburguer">menu</span>
                         </button>
 
                     </div>
@@ -236,6 +245,8 @@ const Header = () => {
                             </ul>
                         </div>
                     </div>
+
+                    <p className='margin-auto sub-header-container-bottom-text'>www.gruasememca.com</p>
                 </section>
             </div>
 
@@ -249,19 +260,61 @@ const Header = () => {
                         </button>
                     </div>
 
-                    <div className='sub-header-2-target'>
+                    <div className='sub-header-2-target d-grid gap-20'>
                         <p className='text'>{t('SubHeader.1.text')}</p>
 
-                        <ul className='d-flex d-flex-wrap gap-20'>
-                            {t('SubHeader.1.machinery', { returnObjects: true }).map((subHeaderMachinery) => (
-                                <li key={subHeaderMachinery.id}>
-                                    <div>
-                                        <img src={subHeaderMachinery.imgSrc} alt={subHeaderMachinery.imgAlt}></img>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
+                        <div className='sub-header-machinery'>
+                            <ul className='d-flex d-flex-wrap gap-10'>
+                                {t('SubHeader.1.machinery', { returnObjects: true }).map((subHeaderMachinery) => (
+                                    <li key={subHeaderMachinery.id} className='card-item-6-2'>
+                                        <div className='d-flex-column gap-10'>
+                                            <img src={subHeaderMachinery.imgSrc} alt={subHeaderMachinery.imgAlt}></img>
+
+                                            <div className='d-flex-column'>
+                                                <p className='card-title'>{subHeaderMachinery.name}</p>
+                                                <p className='text'>{subHeaderMachinery.text}</p>
+
+                                                <a href={subHeaderMachinery.url} className='margin-left simple-link simple-link-1'>
+                                                    <p className='simple-link-text'>Saber más</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
+
+                    <p className='margin-auto sub-header-container-bottom-text'>www.gruasememca.com</p>
+                </section>
+            </div>
+
+            <div className={`sub-header-container sub-header-container-3 ${activeMenu === 4 ? 'active' : ''}`}>
+                <section className='sub-header sub-header-3 d-grid gap-10'>
+                    <div className='d-flex-justify-between'>
+                        <h3 className='title font-family-anton'>{t('SubHeader.2.title')}</h3>
+
+                        <button type='button' className='button button-simple close-sub-header-container' onClick={handleCloseSubHeader}>
+                            <span className="material-symbols-outlined">chevron_left</span>
+                        </button>
+                    </div>
+
+                    <ul className='d-flex gap-10 d-flex-wrap'>
+                        {t('SubHeader.2.projects', { returnObjects: true }).map((subHeaderProjects) => (
+                            <li key={subHeaderProjects.id} className='card-item-4-2'>
+                                <a href={subHeaderProjects.url} className='d-grid-auto-1'>
+                                    <div className='d-flex-column gap-5'>
+                                        <p className='text category'>{subHeaderProjects.category}</p>
+                                        <p className='card-title'>{subHeaderProjects.title}</p>
+                                        <p className='text'>{subHeaderProjects.text}</p>
+                                    </div>
+                                    <img src={subHeaderProjects.imgSrc}></img>
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+
+                    <p className='margin-auto sub-header-container-bottom-text'>www.gruasememca.com</p>
                 </section>
             </div>
 
