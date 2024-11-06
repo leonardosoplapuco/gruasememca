@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { useTranslation } from 'react-i18next';
-import '../../i18next';
+import '../../i18n';
 
 import './Header.css';
 

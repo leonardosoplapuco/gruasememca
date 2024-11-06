@@ -1,52 +1,37 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Usar Routes en lugar de Switch
+import { useTranslation } from 'react-i18next';
+import i18n from './i18n';  // Archivo de configuración de i18next
+import HomePage from './pages/HomePage/HomePage'
 
-import i18n from './i18next';
+const App = () => {
+  const { i18n } = useTranslation();
 
-import HomePage from './pages/HomePage/HomePage';
-import Services from './pages/Services/Services';
+  // Este useEffect se ejecuta cada vez que el idioma cambia
+  useEffect(() => {
+    const language = i18n.language;
+    document.documentElement.lang = language; // Establece el atributo lang del <html>
+  }, [i18n.language]);
 
-import Machines from './pages/Machines/Machines';
-import Projects from './pages/Projects/Projects';
-import Us from './pages/Us/Us';
-import Blog from './pages/Blog/Blog';
-import Article from './pages/Blog/Article/Article';
+  useEffect(() => {
+    const path = window.location.pathname;
+    const language = path.split('/')[1]; // Obtiene el idioma de la ruta
 
-import Contact from './pages/Contact/Contact';
+    if (language === 'en' || language === 'es') {
+      i18n.changeLanguage(language);  // Cambia el idioma según la ruta
+    }
+  }, [i18n]);
 
-function App(){
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
-    i18n.changeLanguage(savedLanguage);
-
-    return (
-        <HelmetProvider>
-            <div className="App">
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/" Component={HomePage} />
-
-                        <Route path="/servicios" Component={Services} />
-                        <Route path="/services" Component={Services} />
-                        
-                        <Route path="/maquinaria" Component={Machines} />
-                        <Route path="/machinery" Component={Machines} />
-
-                        <Route path="/proyectos" Component={Projects} />
-                        <Route path="/projects" Component={Projects} />
-
-                        <Route path="/nosotros" Component={Us} />
-                        <Route path="/about-us" Component={Us} />
-
-                        <Route path="/blog" Component={Blog} />
-                        <Route path="/blog/:slug" Component={Article} />
-
-                        <Route path="/contacto" Component={Contact} />
-                        <Route path="/contact" Component={Contact} />
-                    </Routes>
-                </BrowserRouter>
-            </div>
-        </HelmetProvider>
-    );
-}
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/en" element={<HomePage />} />
+        <Route path="/es" element={<HomePage />} />
+        {/* Otras rutas */}
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
