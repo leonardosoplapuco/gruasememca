@@ -1,28 +1,25 @@
-// src/i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpBackend from 'i18next-http-backend';
 
-// Archivos de traducción
-import en from './Locales/en.json';  // Traducción en inglés
-import es from './Locales/es.json';  // Traducción en español
+const savedLanguage = localStorage.getItem('language') || 'es';
 
 i18n
-  .use(LanguageDetector)  // Detecta el idioma del navegador
+  .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    resources: {
-      en: { translation: en },
-      es: { translation: es },
-    },
-    lng: 'es',  // Idioma por defecto
+    lng: savedLanguage,
     fallbackLng: 'es',
+    debug: true,
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
+    },
+    ns: [], // No se define un namespace predeterminado
     interpolation: {
       escapeValue: false,
     },
-    detection: {
-      order: ['path', 'cookie', 'localStorage', 'navigator'],
-      caches: ['localStorage'],
+    react: {
+      useSuspense: false,
     },
   });
 

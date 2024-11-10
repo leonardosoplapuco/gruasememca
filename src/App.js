@@ -1,37 +1,69 @@
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+// // import Header from './Components/Header';
+// import LanguageSwitcher from './Components/Languages';
+// import './i18n';
+
+// import Home from './Pages/Home'
+
+// function App(){
+//     return (
+//         <Router>
+//             <LanguageSwitcher />
+//             <Routes>
+//                 <Route path="/" element={<Navigate replace to="/es"/>} />
+
+//                 <Route path="/es" element={<Home/>}/>
+//                 <Route path="/en" element={<Home/>}/>
+//             </Routes>
+//         </Router>
+//     );
+// }
+
+// export default App;
+
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Usar Routes en lugar de Switch
-import { useTranslation } from 'react-i18next';
-import i18n from './i18n';  // Archivo de configuración de i18next
-import HomePage from './pages/HomePage/HomePage'
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import LanguageSwitcher from './Components/Languages';
+import i18next from 'i18next';
+import './i18n';
 
-const App = () => {
-  const { i18n } = useTranslation();
+import Home from './Pages/Home';
+import Services from './Pages/Services';
 
-  // Este useEffect se ejecuta cada vez que el idioma cambia
-  useEffect(() => {
-    const language = i18n.language;
-    document.documentElement.lang = language; // Establece el atributo lang del <html>
-  }, [i18n.language]);
+function App() {
+  const location = useLocation();
 
   useEffect(() => {
-    const path = window.location.pathname;
-    const language = path.split('/')[1]; // Obtiene el idioma de la ruta
-
-    if (language === 'en' || language === 'es') {
-      i18n.changeLanguage(language);  // Cambia el idioma según la ruta
+    // Verificar la ruta actual y establecer el idioma
+    const currentPath = location.pathname;
+    if (currentPath.startsWith('/en')) {
+      i18next.changeLanguage('en');
+    } else if (currentPath.startsWith('/es')) {
+      i18next.changeLanguage('es');
     }
-  }, [i18n]);
+  }, [location]);
 
   return (
-    <Router>
+    <>
+      <LanguageSwitcher />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/en" element={<HomePage />} />
-        <Route path="/es" element={<HomePage />} />
-        {/* Otras rutas */}
+        <Route path="/" element={<Navigate replace to="/es"/>} />
+
+        <Route path="/es" element={<Home/>} />
+        <Route path="/en" element={<Home/>} />
+
+        <Route path="/es/servicios" element={<Services/>} />
+        <Route path="/en/services" element={<Services/>} />
       </Routes>
+    </>
+  );
+}
+
+export default function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
-};
-
-export default App;
+}
