@@ -1,26 +1,23 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import HttpBackend from 'i18next-http-backend';
-
-const savedLanguage = localStorage.getItem('language') || 'es';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import Backend from 'i18next-http-backend';
 
 i18n
-  .use(HttpBackend)
-  .use(initReactI18next)
-  .init({
-    lng: savedLanguage,
-    fallbackLng: 'es',
-    debug: true,
-    backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
-    },
-    ns: [], // No se define un namespace predeterminado
-    interpolation: {
-      escapeValue: false,
-    },
-    react: {
-      useSuspense: false,
-    },
-  });
+    .use(Backend)
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+        fallbackLng: 'es',
+        debug: true,
+        backend: {
+            loadPath: '/locales/{{lng}}/{{ns}}.json',
+        },
+        ns: ['header', 'hero', 'services'],
+        defaultNS: 'header',
+        interpolation: {
+            escapeValue: false,
+        },
+    });
 
 export default i18n;

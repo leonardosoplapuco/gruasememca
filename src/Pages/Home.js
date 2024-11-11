@@ -4,7 +4,6 @@ import Hero from '../Components/Hero';
 function Home(){
     return(
         <>
-
             <Header/>
 
             <main>

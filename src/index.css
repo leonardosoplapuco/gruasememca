@@ -12,7 +12,16 @@
     --body: #DADADA;
     
     --header: #FFFFFF;
+
+    --red: #DA131F;
+
+    --black-0: #000000;
+    --black-1: #111111;
+    --black-2: #222222;
+    --black-3: #333333;
 }
+
+/**/
 
 @font-face{
     font-family: 'Anton';
@@ -24,10 +33,66 @@
     src: url('../public/assets/fonts/RoobertSemiBold.ttf') format('truetype');
 }
 
+/**/
+
+.font-anton{
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/**/
+
 body{
     background: var(--body);
     padding: 100px;
 }
+
+main{
+    margin-top: 200px;
+}
+
+/**/
+
+button{
+    width: auto;
+    height: 48px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-icon{
+    width: 48px;
+    background: orange;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.button,
+.button-link{
+    width: auto;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.button-link-1{
+    background: var(--red);
+}
+
+.button-link-1 span,
+.button-link-1 .button-link-text{
+    color: var(--white);
+}
+
+/**/
+
+.margin-left{
+    margin-left: auto;
+}
+
+/**/
 
 header{
     position: fixed;
@@ -35,5 +100,76 @@ header{
     top: 0;
     width: 100%;
     background: var(--header);
+    display: flex;
     z-index: 100;
+}
+
+.header{
+    width: 100%;
+}
+
+.header-top-container,
+.header-bottom-container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.header-top,
+.header-bottom{
+    margin: auto;
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/**/
+
+.logo h2{
+    word-spacing: -5px;
+}
+
+.logo h2,
+.logo h2 b{
+    font-size: 32px;
+    color: var(--red);
+}
+
+.logo h2 b{
+    color: var(--black-0);
+}
+
+/**/
+
+.language-buttons li button img{
+    width: 50px;
+    height: 50px;
+}
+
+/**/
+
+.header-top-contact-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-top-contact-links li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+/**/
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }

@@ -1,3 +1,65 @@
 {
-    "title": "title"
+    "logo":[
+        {
+            "href": "/en/"
+        }
+    ],
+    "headerTopContactLinks":[
+        {
+            "id": 1,
+            "icon": "mail",
+            "text": "contact@gruasememca.com",
+            "href": "mailto: contact@gruasememca.com"
+        },
+        {
+            "id": 2,
+            "icon": "phone_in_talk",
+            "text": "998877665",
+            "href": "tel: +51998877665"
+        }
+    ],
+    "menuLinks":[
+        {
+            "id": 1,
+            "icon": "mail",
+            "text": "Home",
+            "href": "/en/"
+        },
+        {
+            "id": 2,
+            "icon": "handshake",
+            "text": "Services",
+            "href": "/en/services/"
+        },
+        {
+            "id": 3,
+            "icon": "auto_towing",
+            "text": "Machinery",
+            "href": "/en/machinery/"
+        },
+        {
+            "id": 4,
+            "icon": "work",
+            "text": "Projects",
+            "href": "/en/projects/"
+        },
+        {
+            "id": 5,
+            "icon": "diversity_3",
+            "text": "About us",
+            "href": "/en/about-us/"
+        },
+        {
+            "id": 6,
+            "icon": "mail",
+            "text": "Clients",
+            "href": "/es/about-us/clients/"
+        },
+        {
+            "id": 7,
+            "icon": "newspaper",
+            "text": "Blog",
+            "href": "/"
+        }
+    ]
 }

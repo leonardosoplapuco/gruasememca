@@ -1,3 +1,65 @@
 {
-    "title": "titulo"
+    "logo":[
+        {
+            "href": "/es/"
+        }
+    ],
+    "headerTopContactLinks":[
+        {
+            "id": 1,
+            "icon": "mail",
+            "text": "contacto@gruasememca.com",
+            "href": "mailto: contacto@gruasememca.com"
+        },
+        {
+            "id": 2,
+            "icon": "phone_in_talk",
+            "text": "998877665",
+            "href": "tel: +51998877665"
+        }
+    ],
+    "menuLinks":[
+        {
+            "id": 1,
+            "icon": "mail",
+            "text": "Inicio",
+            "href": "/es/"
+        },
+        {
+            "id": 2,
+            "icon": "handshake",
+            "text": "Servicios",
+            "href": "/es/servicios/"
+        },
+        {
+            "id": 3,
+            "icon": "auto_towing",
+            "text": "Maquinaria",
+            "href": "/es/maquinaria/"
+        },
+        {
+            "id": 4,
+            "icon": "work",
+            "text": "Proyectos",
+            "href": "/es/proyectos/"
+        },
+        {
+            "id": 5,
+            "icon": "diversity_3",
+            "text": "Nosotros",
+            "href": "/es/nosotros/"
+        },
+        {
+            "id": 6,
+            "icon": "mail",
+            "text": "Clientes",
+            "href": "/es/nosotros/clientes/"
+        },
+        {
+            "id": 7,
+            "icon": "newspaper",
+            "text": "Blog",
+            "href": "/"
+        }
+    ]
 }

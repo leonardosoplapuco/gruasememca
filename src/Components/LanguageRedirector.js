@@ -7,14 +7,14 @@ function LanguageRedirector(){
     const currentLanguage = i18next.language;
 
     useEffect(() => {
-    if (currentLanguage === 'en') {
-    navigate('/en', { replace: true });
-    } else {
-    navigate('/es', { replace: true });
-    }
+        if (currentLanguage === 'en') {
+            navigate('/en/', { replace: true });
+        } else {
+            navigate('/es/', { replace: true });
+        }
     }, [currentLanguage, navigate]);
 
-    return null; // Este componente no necesita renderizar nada, solo realiza la redirección
+    return null;
 }
 
 export default LanguageRedirector;

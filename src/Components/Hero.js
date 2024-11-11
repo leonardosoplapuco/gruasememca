@@ -5,9 +5,9 @@ function Header() {
   const { t } = useTranslation('hero'); // Carga el JSON específico
 
   return (
-    <header>
-      <h1>{t('title')}</h1>
-    </header>
+    <div>
+      <p>{t('title')}</p>
+    </div>
   );
 }
 
