@@ -8,18 +8,13 @@ function LanguageSwitcher(){
     const routeMap = {
         '/es': '/en',
         '/es/servicios/': '/en/services/',
+        '/es/maquinaria/': '/en/machinery/',
+        '/es/nosotros/': '/en/about-us/',
+
         '/en': '/es',
         '/en/services/': '/es/servicios/',
-
-        '/es': '/en',
-        '/es/maquinaria/': '/en/machinery/',
-        '/en': '/es',
         '/en/machinery/': '/es/maquinaria/',
-
-        '/es': '/en',
-        '/es/nosotros/': '/en/about-us/',
-        '/en': '/es',
-        '/en/about-us/': '/es/nosotros/',
+        '/en/about-us/': '/es/nosotros/'
     };
 
     const changeLanguage = (lng) => {
@@ -41,12 +36,12 @@ function LanguageSwitcher(){
         <ul className='language-buttons'>
             <li>
                 <button type='button' className='es' onClick={() => changeLanguage('es')}>
-                    <img src="/assets/images/Components/Header/espanol-icono.png"></img>
+                    <img src="/assets/images/Components/Header/espanol-icono.png" alt='bandera-espana-icono'></img>
                 </button>
             </li>
             <li>
                 <button type='button' className='en' onClick={() => changeLanguage('en')}>
-                    <img src="/assets/images/Components/Header/ingles-icono.png"></img>
+                    <img src="/assets/images/Components/Header/ingles-icono.png" alt='bandera-estados-unidos-icono'></img>
                 </button>
             </li>
         </ul>
