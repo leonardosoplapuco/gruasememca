@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
 import Home from './Pages/Home';
+
 import Services from './Pages/Services';
+
 import i18next from 'i18next';
 import './i18n';
 
@@ -16,9 +19,9 @@ function App(){
 
     useEffect(() => {
         const currentPath = location.pathname;
-        if (currentPath.startsWith('/en/')) {
+        if (currentPath.startsWith('/en/')){
             i18n.changeLanguage('en');
-        } else if (currentPath.startsWith('/es/')) {
+        } else if (currentPath.startsWith('/es/')){
             i18n.changeLanguage('es');
         }
     }, [location, i18n]);
@@ -32,15 +35,16 @@ function App(){
 
                 <Route path="/es/servicios/" element={<Services/>}/>
                 <Route path="/en/services/" element={<Services/>}/>
-
                 
+                <Route path="/es/servicios/alquiler-de-gruas-telescopicas" element={<Services/>}/>
+                <Route path="/en/services/telescopic-crane-rental" element={<Services/>}/>
             </Routes>
         </>
     );
 }
 
 export default function AppWrapper(){
-    return (
+    return(
         <Router>
             <App />
         </Router>

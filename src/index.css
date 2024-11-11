@@ -1,3 +1,5 @@
+@import url('./DarkMode.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -172,4 +174,10 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+.menu-link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

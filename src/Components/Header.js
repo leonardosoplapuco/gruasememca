@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from '../Components/Languages'
+
+import DarkButton from './DarkButton'
+import LanguageSwitcher from './Languages'
 
 function Header(){
     const { t } = useTranslation('header');
@@ -14,10 +16,7 @@ function Header(){
                             <h2 className='font-anton'>Grúas <b className='font-anton'>Ememca</b></h2>
                         </a>
 
-                        <button type='button' className='button-icon dark-button margin-left'>
-                            <span className="material-symbols-outlined">bedtime</span>
-                            <span className="material-symbols-outlined">light_mode</span>
-                        </button>
+                        <DarkButton/>
 
                         <LanguageSwitcher/>
 
@@ -40,10 +39,18 @@ function Header(){
                             <ul className='menu'>
                                 {t('menuLinks', { returnObjects: true }).map((menuLink) => (
                                     <li key={menuLink.id}>
-                                        <a href={menuLink.href} className=''>
-                                            <span className="material-symbols-outlined">{menuLink.icon}</span>
-                                            <h2 className=''>{menuLink.text}</h2>
-                                        </a>
+                                        {menuLink.id === 2 || menuLink.id === 5 ? (
+                                            <button className={`menu-link menu-link-${menuLink.id}`}>
+                                                <span className="material-symbols-outlined">{menuLink.icon}</span>
+                                                <h2>{menuLink.text}</h2>
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </button>
+                                        ) : (
+                                            <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
+                                                <span className="material-symbols-outlined">{menuLink.icon}</span>
+                                                <h2>{menuLink.text}</h2>
+                                            </a>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
