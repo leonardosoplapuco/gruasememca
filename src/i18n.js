@@ -13,7 +13,7 @@ i18n
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
-        ns: ['header', 'hero', 'services'],
+        ns: ['header', 'searchBar', 'hero', 'services'],
         defaultNS: 'header',
         interpolation: {
             escapeValue: false,

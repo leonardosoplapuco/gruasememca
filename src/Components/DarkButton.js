@@ -1,27 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const DarkButton = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
     useEffect(() => {
-        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-        if (isDarkMode) {
+        const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
+        if (darkModeEnabled) {
             document.body.classList.add('dark-mode');
+            setIsDarkMode(true);
         }
     }, []);
 
     const toggleDarkMode = () => {
-        const isDarkMode = document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.toggle('dark-mode');
+        setIsDarkMode(isDark);
 
-        if (isDarkMode){
+        if (isDark) {
             localStorage.setItem('darkMode', 'enabled');
         } else {
             localStorage.setItem('darkMode', 'disabled');
         }
     };
 
-    return (
-        <button type="button" id="dark-button" className="button-icon dark-button margin-left" onClick={toggleDarkMode}>
-            <span className="material-symbols-outlined">bedtime</span>
-            <span className="material-symbols-outlined">light_mode</span>
+    return(
+        <button type="button" id="dark-button" className={`button-icon dark-button margin-left ${isDarkMode ? 'active' : ''}`} onClick={toggleDarkMode}>
+            <span className="material-symbols-outlined moon">bedtime</span>
+            <span className="material-symbols-outlined sun">light_mode</span>
         </button>
     );
 };
