@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import DarkButton from './DarkButton'
-import LanguageSwitcher from './Languages'
+import DarkButton from './DarkButton';
+import LanguageSwitcher from './Languages';
+
+import SearchBar from './SearchBar';
 
 function Header(){
     const { t } = useTranslation('header');
@@ -55,6 +57,8 @@ function Header(){
                                 ))}
                             </ul>
                         </nav>
+
+                        <SearchBar/>
                     </div>
                 </div>
             </div>
