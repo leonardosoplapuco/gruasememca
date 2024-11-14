@@ -25,9 +25,9 @@ function Header(){
                         <ul className='header-top-contact-links'>
                             {t('headerTopContactLinks', { returnObjects: true }).map((headerTopContactLink) => (
                                 <li key={headerTopContactLink.id}>
-                                    <a href={headerTopContactLink.href} className=''>
+                                    <a href={headerTopContactLink.href} className='button-link button-link-2'>
                                         <span className="material-symbols-outlined">{headerTopContactLink.icon}</span>
-                                        <p className=''>{headerTopContactLink.text}</p>
+                                        <p className='button-link-text'>{headerTopContactLink.text}</p>
                                     </a>
                                 </li>
                             ))}
@@ -43,13 +43,13 @@ function Header(){
                                     <li key={menuLink.id}>
                                         {menuLink.id === 2 || menuLink.id === 5 ? (
                                             <button className={`menu-link menu-link-${menuLink.id}`}>
-                                                <span className="material-symbols-outlined">{menuLink.icon}</span>
+                                                <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
                                                 <h2>{menuLink.text}</h2>
-                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                                <span className="material-symbols-outlined icon-down">keyboard_arrow_down</span>
                                             </button>
                                         ) : (
                                             <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
-                                                <span className="material-symbols-outlined">{menuLink.icon}</span>
+                                                <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
                                                 <h2>{menuLink.text}</h2>
                                             </a>
                                         )}

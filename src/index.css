@@ -11,7 +11,7 @@
 }
 
 :root{
-    --body: #DADADA;
+    --body: #F5F5F5;
     
     --header: #FFFFFF;
 
@@ -28,8 +28,13 @@
     --black-8: #888888;
     --black-9: #999999;
 
-    ---white: #FFFFFF;
+    --text: #212121;
+
+    --white: #FFFFFF;
     --white-1: #FFFFFF;
+
+    --t-100: all 100ms linear;
+    --t-300: all 300ms linear;
 }
 
 /**/
@@ -56,18 +61,19 @@
 
 body{
     background: var(--body);
-    padding: 100px;
+    color: var(--text);
+    transition: var(--t-100);
 }
 
 main{
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 /**/
 
 button{
     width: auto;
-    height: 48px;
+    height: 44px;
     background: none;
     border: none;
     outline: none;
@@ -75,8 +81,7 @@ button{
 }
 
 .button-icon{
-    width: 48px;
-    background: orange;
+    width: 44px;
     overflow: hidden;
     border-radius: 100%;
 }
@@ -84,8 +89,13 @@ button{
 .button,
 .button-link{
     width: auto;
-    padding: 0 20px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
     border-radius: 5px;
+    gap: 5px;
 }
 
 .button-link-1{
@@ -99,7 +109,13 @@ button{
 }
 
 .button-link-2{
-    background: rgba(218 19 31 / 0.5);
+    border: 1px solid var(--red);
+    background: rgba(218 19 31 / 0.075);
+    color: var(--red);
+}
+
+.button-link-2 .button-link-text,
+.button-link-2 span{
     color: var(--red);
 }
 
@@ -116,30 +132,36 @@ header{
     left: 0;
     top: 0;
     width: 100%;
+    padding: 10px 0;
     background: var(--header);
+    transition: var(--t-100);
     display: flex;
     z-index: 100;
 }
 
 .header{
     width: 100%;
+    display: grid;
+    gap: 10px;
 }
 
 .header-top-container,
 .header-bottom-container{
     width: 100%;
+    height: 50px;
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .header-top,
 .header-bottom{
     margin: auto;
     width: 100%;
+    height: 100%;
     max-width: 2000px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 /**/
@@ -152,6 +174,7 @@ header{
 .logo h2 b{
     font-size: 32px;
     color: var(--red);
+    transition: var(--t-100);
 }
 
 .logo h2 b{
@@ -162,6 +185,9 @@ header{
 
 .dark-button{
     position: relative;
+    background: rgba(218 19 31 / 0.075);
+    transition: var(--t-100);
+    border: 1px solid var(--red);
 }
 
 .dark-button span{
@@ -169,10 +195,8 @@ header{
     left: 50%;
     top: 50%;
     translate: -50% -50%;
-}
-
-.dark-button.active{
-    background: blue;
+    transition: var(--t-100);
+    color: var(--red);
 }
 
 .sun{
@@ -190,8 +214,8 @@ header{
 /**/
 
 .language-buttons li button img{
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
 }
 
 /**/
@@ -203,27 +227,69 @@ header{
     gap: 10px;
 }
 
-.header-top-contact-links li a{
+/**/
+
+.menu-container{
+    width: auto;
+    height: 44px;
+    display: flex;
+}
+
+.menu{
+    width: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 0 20px;
 }
 
-/**/
-
-.menu{
+.menu li{
+    width: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
 .menu-link{
+    width: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 5px;
+    position: relative;
+}
+
+.menu-link .icon-representation{
+    display: none;
+}
+
+.menu-link .icon-down{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    translate: -50% 0;
+    font-size: 18px;
+    opacity: 0;
+}
+
+.menu-link:hover .icon-down,
+.menu-link.active .icon-down{
+    opacity: 1;
+}
+
+.menu-link span,
+.menu-link h2{
+    color: var(--text);
+    transition: var(--t-100);
+}
+
+.menu-link:hover span,
+.menu-link.active span,
+.menu-link:hover h2,
+.menu-link.active h2{
+    color: var(--red);
 }
 
 /**/
@@ -239,21 +305,41 @@ header{
     width: 100%;
     height: 100%;
     padding: 0 20px;
+    border: 1px solid var(--red);
+    background: var(--header);
+    outline: 0;
+    border-radius: 5px;
+    color: var(--text);
+}
+
+.search-bar::placeholder{
+    color: var(--black-6);
 }
 
 .search-bar-options-container{
     position: absolute;
     left: 0;
-    top: calc(100% + 10px);
+    top: calc(100% + 25px);
     width: 100%;
     height: auto;
     max-height: calc(44px * 5);
     background: var(--header);
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--black-7);
+    border: 1px solid var(--red);
     overflow: hidden;
     overflow-y: auto;
+    border-radius: 5px;
+}
+
+.search-bar-options-container::-webkit-scrollbar{
+    border-radius: 5px;
+    width: 3px;
+}
+
+.search-bar-options-container::-webkit-scrollbar-thumb{
+    background: var(--red);
+    border-radius: 5px;
 }
 
 .search-bar-options{
@@ -272,8 +358,44 @@ header{
     align-items: center;
     justify-content: left;
     padding: 0 20px;
+    color: var(--text);
+    transition: var(--t-100);
 }
 
 .search-bar-options li a:hover{
-    background: blue;
+    background: rgba(218 19 31 / 0.075);
+}
+
+/**/
+
+.hero-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.hero{
+    margin: auto;
+    width: 100%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.hero-card{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-card h1,
+.hero-card h1 b{
+    font-size: 56px;
+    font-family: 'Anton', sans-serif;
+    font-weight: unset;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.hero-card h1 b{
+    color: var(--red);
 }
