@@ -20,18 +20,22 @@ function Header(){
 
                         <DarkButton/>
 
+                        |
+
                         <LanguageSwitcher/>
 
-                        <ul className='header-top-contact-links'>
-                            {t('headerTopContactLinks', { returnObjects: true }).map((headerTopContactLink) => (
-                                <li key={headerTopContactLink.id}>
-                                    <a href={headerTopContactLink.href} className='button-link button-link-2'>
-                                        <span className="material-symbols-outlined">{headerTopContactLink.icon}</span>
-                                        <p className='button-link-text'>{headerTopContactLink.text}</p>
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
+                        |
+
+                        <a href=''>
+                            <p>contacto@gruasememca.com</p>
+                        </a>
+
+                        |
+
+                        <a href='+51 998877665' className='button-link button-link-1 button-call'>
+                            <span class="material-symbols-outlined">phone_in_talk</span>
+                            <p className='button-link-text'>Llamar ahora</p>
+                        </a>
                     </div>
                 </div>
 
