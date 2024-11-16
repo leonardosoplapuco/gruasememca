@@ -14,8 +14,9 @@
         {
             "id": 2,
             "icon": "phone_in_talk",
-            "text": "998877665",
-            "href": "tel: +51998877665"
+            "text": "+51 998877665",
+            "href": "tel: +51998877665",
+            "label": "Llámanos ahora"
         }
     ],
     "menuLinks":[

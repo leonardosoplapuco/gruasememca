@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import DarkButton from './DarkButton';
 import LanguageSwitcher from './Languages';
 
-import SearchBar from './SearchBar';
+// import SearchBar from './SearchBar';
 
 function Header(){
     const { t } = useTranslation('header');
@@ -20,21 +20,21 @@ function Header(){
 
                         <DarkButton/>
 
-                        |
+                        <span className='text'>|</span>
 
                         <LanguageSwitcher/>
 
-                        |
+                        <span className='text'>|</span>
 
-                        <a href=''>
-                            <p>contacto@gruasememca.com</p>
+                        <a href={t('headerTopContactLinks.0.href')} className='button-text-link button-text-link-1' >
+                            <p className='button-link-text'>{t('headerTopContactLinks.0.text')}</p>
                         </a>
-
-                        |
 
                         <a href='+51 998877665' className='button-link button-link-1 button-call'>
                             <span class="material-symbols-outlined">phone_in_talk</span>
-                            <p className='button-link-text'>Llamar ahora</p>
+                            <p className='button-link-text'>{t('headerTopContactLinks.1.text')}</p>
+
+                            <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
                         </a>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ function Header(){
                             </ul>
                         </nav>
 
-                        <SearchBar/>
+                        {/* <SearchBar/> */}
                     </div>
                 </div>
             </div>

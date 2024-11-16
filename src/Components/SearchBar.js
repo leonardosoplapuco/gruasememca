@@ -25,6 +25,7 @@ const SearchBar = () => {
     return(
         <div className='margin-left search-bar-container'>
             <input type="text" className='search-bar' placeholder={t('placeholder', { ns: 'searchBar' })} value={busqueda} onChange={handleChange} />
+            
             <nav className='search-bar-options-container'>
                 <ul className='search-bar-options'>
                     {resultados.map((resultado) => (
