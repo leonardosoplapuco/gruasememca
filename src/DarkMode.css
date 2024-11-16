@@ -8,18 +8,11 @@
 
 /**/
 
+.dark-mode header{
+    border-bottom: 1px solid transparent;
+}
+
 .dark-mode .logo h2 b{
-    color: var(--white);
-}
-
-/**/
-
-.dark-mode .dark-button{
-    background: var(--black-5);
-    border: 1px solid var(--white);
-}
-
-.dark-mode .dark-button span{
     color: var(--white);
 }
 
@@ -35,26 +28,32 @@
     color: var(--white);
 }
 
-/**/
-
-.dark-mode .menu-link span,
-.dark-mode .menu-link h2{
-    color: var(--black-9);
+.dark-mode .button-link-label{
+    background: rgba(235 235 235 / 0.1);
+    color: var(--white);
+    border: 1px solid var(--white);
 }
 
-.dark-mode .menu-link:hover span,
-.dark-mode .menu-link:hover h2{
+.dark-mode .button-text-link-1 .button-link-text{
     color: var(--white);
 }
 
 /**/
 
-.dark-mode .search-bar{
-    border: 1px solid var(--white);
+.dark-mode .menu-link span,
+.dark-mode .menu-link h2{
+    color: var(--white);
 }
 
-.dark-mode .search-bar-options-container{
-    border: 1px solid var(--white);
+.dark-mode .menu-link:hover span,
+.dark-mode .menu-link:hover h2{
+    color: rgba(235 235 235 / 0.7);
+}
+
+/**/
+
+.dark-mode .search-bar{
+    color: var(--black-4);
 }
 
 .dark-mode .search-bar-options-container::-webkit-scrollbar-thumb{

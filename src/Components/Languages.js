@@ -35,16 +35,14 @@ function LanguageSwitcher() {
         <ul className='language-buttons'>
             {i18next.language === 'es' ? (
                 <li>
-                    <button type='button' className='en' onClick={() => changeLanguage('en')}>
-                        {/* <img src="/assets/images/Components/Header/ingles-icono.png" alt='bandera-estados-unidos-icono' /> */}
-                        EN
+                    <button type='button' className='language-button en' onClick={() => changeLanguage('en')}>
+                        <span class="material-symbols-outlined text">language_us</span>
                     </button>
                 </li>
             ) : (
                 <li>
-                    <button type='button' className='es' onClick={() => changeLanguage('es')}>
-                        {/* <img src="/assets/images/Components/Header/espanol-icono.png" alt='bandera-espana-icono' /> */}
-                        ES
+                    <button type='button' className='language-button es' onClick={() => changeLanguage('es')}>
+                        <span class="material-symbols-outlined text">language_spanish</span>
                     </button>
                 </li>
             )}
