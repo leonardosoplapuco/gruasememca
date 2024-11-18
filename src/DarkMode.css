@@ -8,10 +8,6 @@
 
 /**/
 
-.dark-mode header{
-    border-bottom: 1px solid transparent;
-}
-
 .dark-mode .logo h2 b{
     color: var(--white);
 }

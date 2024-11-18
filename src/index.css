@@ -1,5 +1,4 @@
 @import url('./DarkMode.css');
-@import url('./responsive.css');
 
 *{
     margin: 0;
@@ -13,7 +12,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding: 125px;
+    scroll-padding: 140px;
 }
 
 body::-webkit-scrollbar{
@@ -83,7 +82,7 @@ body{
 }
 
 main{
-    margin-top: 130px;
+    margin-top: 140px;
 }
 
 .block-container{
@@ -268,7 +267,7 @@ header{
     padding: 10px 0;
     background: var(--header);
     transition: var(--t-100);
-    border-bottom: 1px solid rgba(0 0 0 / 0.1);
+    /* border-bottom: 1px solid rgba(0 0 0 / 0.1); */
     display: flex;
     z-index: 100;
 }
@@ -281,6 +280,7 @@ header{
 .header-top-container,
 .header-bottom-container{
     width: 100%;
+    height: 60px;
     display: flex;
     padding: 0 20px;
 }
@@ -371,7 +371,7 @@ header{
 
 .menu-container{
     width: auto;
-    height: 44px;
+    height: 100%;
     display: flex;
 }
 
@@ -627,6 +627,10 @@ header{
 
     .menu-icon{
         display: block;
+    }
+
+    .header-top .button-link-1{
+        display: none;
     }
 
     /**/
