@@ -32,6 +32,56 @@ const Home = () => {
             <main>
                 <Hero/>
                 <ChatBot/>
+
+                <div className="block-container">
+                    <section className="block-content d-flex-column gap-20">
+                        <div className="home-companies">
+                            <ul>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/ab-technology.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/alpa.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/binda.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/lepsa.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/proyec.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/sigelec.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/zinsa.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/sigelec.webp"></img>
+                                </li>
+                                <li>
+                                    <img className="" src="/assets/images/clientes/zinsa.webp"></img>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="" className="margin-left button-text-link button-text-link-1">
+                            <p className="button-link-text">Ver más</p>
+                            <span className="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </section>
+                </div>
+
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
+                <p>asadasdasdasdasdas</p>
             </main>
 
         </>

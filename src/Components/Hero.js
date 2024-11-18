@@ -9,7 +9,7 @@ function Header(){
                 <div className='hero-card hero-card-1 d-flex-column gap-10'>
                     <h1>{t('h1.0.textOne')} <b>{t('h1.0.textTwo')}</b></h1>
 
-                    <ul className='list-simple'>
+                    <ul className='list-simple margin-bottom-20'>
                         {t('list', { returnObjects: true }).map((item) => (
                             <li key={item.id}>
                                 <span className="material-symbols-outlined list-icon-check">check</span>
