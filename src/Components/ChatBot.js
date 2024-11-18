@@ -6,7 +6,10 @@ function ChatBot(){
 
     return(
         <>
-            <button type='' className='chatBotButton'>a</button>
+            <button type='button' className='chatBotButton'>
+                <span className="material-symbols-outlined">help</span>
+                <p className=''>Preguntas frecuentes</p>
+            </button>
         </>
     );
 }
