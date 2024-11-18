@@ -41,6 +41,13 @@ function Header(){
 
                 <div className='header-bottom-container'>
                     <div className='header-bottom'>
+                        <a href='+51 998877665' className='button-link button-link-1 button-call'>
+                            <span className="material-symbols-outlined">phone_in_talk</span>
+                            <p className='button-link-text'>{t('headerTopContactLinks.1.text')}</p>
+
+                            <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
+                        </a>
+
                         <nav className='menu-container'>
                             <ul className='menu'>
                                 {t('menuLinks', { returnObjects: true }).map((menuLink) => (

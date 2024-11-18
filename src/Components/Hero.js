@@ -27,7 +27,7 @@ function Header(){
                         </li>
                         <li>
                             <a href={t('links.1.href')} className='button-link button-link-1'>
-                                <span class="material-symbols-outlined">phone_in_talk</span>
+                                <span className="material-symbols-outlined">phone_in_talk</span>
                                 <p className='button-link-text'>{t('links.1.text')}</p>
                             </a>
                         </li>
