@@ -8,27 +8,30 @@
     "list":[
         {
             "id": 1,
-            "text": "Texto 1 Texto 1 Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1"
+            "text": "Con más de 15 años de experiencia en el sector, en servicios de alquiler de grúas telescópicas, izajes, montaje y desmontaje, y eliminación de tierra."
         },
         {
             "id": 2,
-            "text": "Texto 2"
-        },
-        {
-            "id": 3,
-            "text": "Texto 3"
+            "text": "Nuestro compromiso con la calidad y seguridad nos distingue, ofreciendo soluciones personalizadas que se apadtan a las necesidades de cada proyecto."
         }
     ],
     "links":[
         {
             "id": 1,
-            "href": "",
-            "text": "Sobre nosotros"
+            "href": "/es/nosotros",
+            "text": "Nosotros"
         },
         {
             "id": 2,
-            "href": "",
+            "href": "/es/contacto",
             "text": "Cotizar ahora"
+        }
+    ],
+    "cardTwo":[
+        {
+            "id": 1,
+            "text": "*Equipo de Grúas Ememca - 2025",
+            "alt": "foto-grupal-del-equipo-de-gruas-ememca"
         }
     ]
 }

@@ -6,7 +6,7 @@ function ChatBot(){
 
     return(
         <>
-            <button type='' className='chatBotButton'>ChatButton</button>
+            <button type='' className='chatBotButton'>a</button>
         </>
     );
 }
