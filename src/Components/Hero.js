@@ -34,8 +34,8 @@ function Header(){
                     </ul>
                 </div>
                 <div className='hero-card hero-card-2'>
-                    <img src='https://www.gruasememca.com/media/img/gallery-2.webp' alt='foto-grupal-del-equipo-de-gruas-ememca' className='img-simple'></img>
-                    <p className='text'>Breve texto descriptivo sobre la imagen</p>
+                    <img src='https://www.gruasememca.com/media/img/gallery-2.webp' alt={t('cardTwo.0.alt')} className='img-simple'></img>
+                    <p className='text'>{t('cardTwo.0.text')}</p>
                 </div>
             </div>
         </section>

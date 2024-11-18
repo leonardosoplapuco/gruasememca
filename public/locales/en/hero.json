@@ -8,15 +8,30 @@
     "list":[
         {
             "id": 1,
-            "text": "Text 1"
+            "text": "With more than 15 years of experience in the sector, in telescopic crane rental services, lifting, assembly and disassembly, and earth removal."
         },
         {
             "id": 2,
-            "text": "Text 2"
+            "text": "Our commitment to quality and safety distinguishes us, offering customized solutions that fit the needs of each project."
+        }
+    ],
+    "links":[
+        {
+            "id": 1,
+            "href": "/en/about-us",
+            "text": "About us"
         },
         {
-            "id": 3,
-            "text": "Text 3"
+            "id": 2,
+            "href": "/en/contact",
+            "text": "Quote now"
+        }
+    ],
+    "cardTwo":[
+        {
+            "id": 1,
+            "text": "Equipment of Grúas Ememca - 2025",
+            "alt": "group-photo-of-equipment-gruas-ememca"
         }
     ]
 }

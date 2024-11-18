@@ -14,7 +14,7 @@
         {
             "id": 2,
             "icon": "phone_in_talk",
-            "text": "+51 998877665",
+            "text": "998877665",
             "href": "tel: +51998877665",
             "label": "Call us now"
         }
@@ -30,7 +30,33 @@
             "id": 2,
             "icon": "handshake",
             "text": "Services",
-            "href": "/en/services/"
+            "href": "/en/services/",
+            "subHeader":[
+                {
+                    "id": 1,
+                    "icon": "",
+                    "text": "Telescopic crane rental",
+                    "href": "/en/services/telescopic-crane-rental"
+                },
+                {
+                    "id": 2,
+                    "icon": "",
+                    "text": "Izaje",
+                    "href": "/en/services/lifting/"
+                },
+                {
+                    "id": 3,
+                    "icon": "",
+                    "text": "Assembly and disassembly",
+                    "href": "/en/servicesassembly-and-disassembly"
+                },
+                {
+                    "id": 4,
+                    "icon": "",
+                    "text": "Soil removal",
+                    "href": "/en/services/soil-removal"
+                }
+            ]
         },
         {
             "id": 3,
@@ -48,19 +74,33 @@
             "id": 5,
             "icon": "diversity_3",
             "text": "About us",
-            "href": "/en/about-us/"
+            "href": "/en/about-us/",
+            "subHeader":[
+                {
+                    "id": 1,
+                    "icon": "",
+                    "text": "Our team",
+                    "href": "/en/about-us/our-team"
+                },
+                {
+                    "id": 2,
+                    "icon": "",
+                    "text": "Certificaciones",
+                    "href": "/es/nosotros/certifications/"
+                }
+            ]
         },
         {
             "id": 6,
             "icon": "mail",
             "text": "Clients",
-            "href": "/es/about-us/clients/"
+            "href": "/es/about-us/clients"
         },
         {
             "id": 7,
             "icon": "newspaper",
             "text": "Blog",
-            "href": "/"
+            "href": "https://blog-gruasememca.vercel.app/en/"
         }
     ]
 }
