@@ -167,7 +167,9 @@ button{
 }
 
 .button-icon{
+    display: flex;
     width: 44px;
+    height: 44px;
     overflow: hidden;
     border-radius: 100%;
     transition: var(--t-100);
@@ -272,7 +274,6 @@ header{
     padding: 10px 0;
     background: var(--header);
     transition: var(--t-100);
-    /* border-bottom: 1px solid rgba(0 0 0 / 0.1); */
     display: flex;
     z-index: 100;
 }
@@ -295,7 +296,7 @@ header{
     margin: auto;
     width: 100%;
     height: 100%;
-    max-width: 2000px;
+    max-width: 1800px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -395,12 +396,16 @@ header{
     gap: 20px;
 }
 
-.menu li{
+.menu > li{
     width: auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-link-container{
+    position: relative;
 }
 
 .menu-link{
@@ -419,7 +424,7 @@ header{
 .menu-link .icon-down{
     position: absolute;
     left: 50%;
-    bottom: -5px;
+    top: 100%;
     translate: -50% 0;
     font-size: 18px;
     transition: var(--t-100);
@@ -431,33 +436,120 @@ header{
     opacity: 1;
 }
 
-.menu-link span,
-.menu-link h2{
+.menu-link .icon-representation,
+.menu-link .icon-down,
+.menu-link > h2{
     color: var(--text);
     transition: var(--t-100);
 }
 
-.menu-link:hover span,
-.menu-link.active span,
-.menu-link:hover h2,
-.menu-link.active h2{
+.menu-link:hover .icon-representation,
+.menu-link.active .icon-representation,
+.menu-link:hover .icon-down,
+.menu-link.active .icon-down,
+.menu-link:hover > h2,
+.menu-link.active > h2{
     color: var(--red);
 }
 
+/**/
+
 .menu-icon{
     display: none;
-    width: 44px;
-    position: relative;
-    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 0 15px;
     background: #E6E6E6;
 }
 
-.menu-icon span{
+.menu-icon div{
+    width: 24px;
+    position: relative;
+    display: flex;
+}
+
+.menu-icon div span{
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     color: var(--text);
+    transition: var(--t-100);
+}
+
+.menu-close{
+    scale: 0;
+}
+
+.menu-icon.active .hamburguer{
+    scale: 1;
+}
+
+/**/
+
+.menu-link-2{
+    position: relative;
+}
+
+.sub-header{
+    position: absolute;
+    left: 0;
+    top: calc(100% + 20px);
+    width: 320px;
+    height: auto;
+    background: var(--header);
+    border: 1px solid var(--body);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sub-header.active{
+    opacity: 1;
+    pointer-events: unset;
+    user-select: unset;
+}
+
+.menu-link-container:hover .sub-header{
+    opacity: 1;
+    pointer-events: unset;
+    user-select: unset;
+}
+
+.sub-header li{
+    height: 44px;
+}
+
+.sub-header li a{
+    width: auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+
+.sub-header li a:hover{
+    background: rgba(218 19 31 / 0.075);
+}
+
+.sub-header li a span,
+.sub-header li a h3{
+    color: var(--text);
+    transition: var(--t-100);
+}
+
+.sub-header li a:hover span,
+.sub-header li a:hover h3{
+    color: var(--red);
 }
 
 /**/
@@ -543,7 +635,7 @@ header{
 .hero{
     margin: auto;
     width: 100%;
-    max-width: 2000px;
+    max-width: 1800px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -552,6 +644,11 @@ header{
 .hero-card{
     width: 100%;
     height: 100%;
+}
+
+.hero-card h1{
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-card h1,
@@ -645,7 +742,7 @@ header{
     }
 
     .menu-icon{
-        display: block;
+        display: flex;
     }
 
     .header-top .button-link-1{
@@ -657,6 +754,10 @@ header{
     .hero{
         gap: 10px;
         grid-template-columns: 1fr;
+    }
+
+    .hero-card h1{
+        text-align: center;
     }
 
     .hero-card h1, .hero-card h1 b{

@@ -34,25 +34,31 @@
             "subHeader":[
                 {
                     "id": 1,
-                    "icon": "",
+                    "icon": "handshake",
+                    "text": "Servicios",
+                    "href": "/es/servicios/"
+                },
+                {
+                    "id": 2,
+                    "icon": "auto_towing",
                     "text": "Alquiler de grúas telescópicas",
                     "href": "/es/servicios/alquiler-de-gruas-telescopicas"
                 },
                 {
-                    "id": 2,
-                    "icon": "",
+                    "id": 3,
+                    "icon": "auto_towing",
                     "text": "Izaje",
                     "href": "/es/servicios/izaje/"
                 },
                 {
-                    "id": 3,
-                    "icon": "",
+                    "id": 4,
+                    "icon": "auto_towing",
                     "text": "Montaje y desmontaje",
                     "href": "/es/servicios/montaje-y-desmontaje"
                 },
                 {
-                    "id": 4,
-                    "icon": "",
+                    "id": 5,
+                    "icon": "auto_towing",
                     "text": "Eliminación de tierra",
                     "href": "/es/servicios/eliminicacion-de-tierra"
                 }
@@ -77,14 +83,20 @@
             "href": "/es/nosotros/",
             "subHeader":[
                 {
+                    "id": 0,
+                    "icon": "diversity_3",
+                    "text": "Sobre nosotros",
+                    "href": "/es/nosotros/"
+                },
+                {
                     "id": 1,
-                    "icon": "",
+                    "icon": "groups",
                     "text": "Nuestro equipo",
                     "href": "/es/nosotros/nuestro-equipo"
                 },
                 {
                     "id": 2,
-                    "icon": "",
+                    "icon": "new_releases",
                     "text": "Certificaciones",
                     "href": "/es/nosotros/certificaciones"
                 }
