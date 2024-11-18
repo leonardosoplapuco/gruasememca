@@ -18,11 +18,11 @@ function Header(){
                             <h2 className='font-anton'>Grúas <b className='font-anton'>Ememca</b></h2>
                         </a>
 
-                        <DarkButton/>
+                        <LanguageSwitcher/>
 
                         <span className='text'>|</span>
 
-                        <LanguageSwitcher/>
+                        <DarkButton/>
 
                         <span className='text'>|</span>
 
@@ -31,7 +31,7 @@ function Header(){
                         </a>
 
                         <a href='+51 998877665' className='button-link button-link-1 button-call'>
-                            <span class="material-symbols-outlined">phone_in_talk</span>
+                            <span className="material-symbols-outlined">phone_in_talk</span>
                             <p className='button-link-text'>{t('headerTopContactLinks.1.text')}</p>
 
                             <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
@@ -63,6 +63,11 @@ function Header(){
                         </nav>
 
                         {/* <SearchBar/> */}
+
+                        <button type='button' className='menu-icon margin-left'>
+                            <span className="material-symbols-outlined">menu</span>
+                            <span className="material-symbols-outlined">close</span>
+                        </button>
                     </div>
                 </div>
             </div>

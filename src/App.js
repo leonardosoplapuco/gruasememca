@@ -26,7 +26,7 @@ function App(){
         }
     }, [location, i18n]);
 
-    return (
+    return(
         <>
             <Routes>
                 <Route path="/" element={<Navigate replace to="/es/" />}/>

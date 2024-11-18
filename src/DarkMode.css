@@ -20,6 +20,9 @@
 
 .dark-mode .button-link-2{
     border: 1px solid var(--white);
+}
+
+.dark-mode .button-link-2:hover{
     background: rgba(235 235 235 / 0.075);
 }
 
@@ -48,6 +51,12 @@
 .dark-mode .menu-link:hover span,
 .dark-mode .menu-link:hover h2{
     color: rgba(235 235 235 / 0.7);
+}
+
+/**/
+
+.dark-mode .menu-icon{
+    background: var(--black-4);
 }
 
 /**/

@@ -1,4 +1,5 @@
 @import url('./DarkMode.css');
+@import url('./responsive.css');
 
 *{
     margin: 0;
@@ -10,12 +11,22 @@
     font-family: 'Roobert', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 125px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --body: #F5F5F5;
     
     --header: #FFFFFF;
 
     --red: #DA131F;
+    --check: lightgreen;
 
     --black-0: #000000;
     --black-1: #111111;
@@ -87,6 +98,60 @@ main{
     max-width: 1600px;
 }
 
+.d-flex{
+    display: flex;
+}
+
+.d-flex-left{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-5{
+    gap: 5;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.gap-15{
+    gap: 15px;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.list-simple{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-simple li{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.list-icon-check{
+    color: var(--check);
+}
+
+.img-simple{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .text{
     color: var(--text);
 }
@@ -106,6 +171,7 @@ button{
     width: 44px;
     overflow: hidden;
     border-radius: 100%;
+    transition: var(--t-100);
 }
 
 .button,
@@ -118,6 +184,7 @@ button{
     justify-content: center;
     padding: 0 15px;
     border-radius: 5px;
+    transition: var(--t-100);
     gap: 5px;
 }
 
@@ -137,8 +204,11 @@ button{
 
 .button-link-2{
     border: 1px solid var(--red);
-    background: rgba(218 19 31 / 0.05);
     color: var(--red);
+}
+
+.button-link-2:hover{
+    background: rgba(218 19 31 / 0.1);
 }
 
 .button-link-2 .button-link-text,
@@ -284,6 +354,10 @@ header{
     height: 44px;
 }
 
+.language-button span{
+    font-size: 32px;
+}
+
 /**/
 
 .header-top-contact-links{
@@ -357,6 +431,22 @@ header{
 .menu-link:hover h2,
 .menu-link.active h2{
     color: var(--red);
+}
+
+.menu-icon{
+    display: none;
+    width: 44px;
+    position: relative;
+    border-radius: 100%;
+    background: #E6E6E6;
+}
+
+.menu-icon span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    color: var(--text);
 }
 
 /**/
@@ -445,7 +535,7 @@ header{
     max-width: 2000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .hero-card{
@@ -455,13 +545,101 @@ header{
 
 .hero-card h1,
 .hero-card h1 b{
-    font-size: 56px;
+    font-size: 80px;
     font-family: 'Anton', sans-serif;
     font-weight: unset;
     text-transform: uppercase;
     color: var(--text);
+    transition: var(--t-100);
 }
 
 .hero-card h1 b{
     color: var(--red);
+}
+
+.hero-card-2 img{
+    height: 320px;
+}
+
+/**/
+
+.chatBotButton{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    background: orange;
+}
+
+/**/
+
+@media screen and (max-width: 800px){
+
+    *{
+        font-size: 16px;
+    }
+
+    /**/
+
+    .logo h2, .logo h2 b{
+        font-size: 32px;
+    }
+
+    /**/
+
+    .header-top .button-text-link{
+        display: none;
+    }
+
+    /**/
+
+    .hero-card h1, .hero-card h1 b{
+        font-size: 48px;
+    }
+
+    .hero-card-2 img{
+        height: 240px;
+    }
+}
+
+/**/
+
+@media screen and (max-width: 600px){
+
+    *{
+        font-size: 13px;
+    }
+
+    /**/
+
+    .logo h2, .logo h2 b{
+        font-size: 30px;
+    }
+
+    /**/
+
+    .menu-container{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    /**/
+
+    .hero{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card h1, .hero-card h1 b{
+        font-size: 44px;
+    }
+
+    .hero-card-2 img{
+        height: 160px;
+    }
 }

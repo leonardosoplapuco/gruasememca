@@ -32,17 +32,17 @@ function LanguageSwitcher() {
     };
 
     return (
-        <ul className='language-buttons'>
+        <ul className='language-buttons margin-left'>
             {i18next.language === 'es' ? (
                 <li>
                     <button type='button' className='language-button en' onClick={() => changeLanguage('en')}>
-                        <span class="material-symbols-outlined text">language_us</span>
+                        <span className="material-symbols-outlined text">language_us</span>
                     </button>
                 </li>
             ) : (
                 <li>
                     <button type='button' className='language-button es' onClick={() => changeLanguage('es')}>
-                        <span class="material-symbols-outlined text">language_spanish</span>
+                        <span className="material-symbols-outlined text">language_spanish</span>
                     </button>
                 </li>
             )}

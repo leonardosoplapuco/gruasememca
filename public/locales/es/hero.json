@@ -1,3 +1,34 @@
 {
-    "title": "este es el hero"
+    "h1":[
+        {
+            "textOne": "Alquiler de",
+            "textTwo": "grúas telescópicas"
+        }
+    ],
+    "list":[
+        {
+            "id": 1,
+            "text": "Texto 1 Texto 1 Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1Texto 1"
+        },
+        {
+            "id": 2,
+            "text": "Texto 2"
+        },
+        {
+            "id": 3,
+            "text": "Texto 3"
+        }
+    ],
+    "links":[
+        {
+            "id": 1,
+            "href": "",
+            "text": "Sobre nosotros"
+        },
+        {
+            "id": 2,
+            "href": "",
+            "text": "Cotizar ahora"
+        }
+    ]
 }
