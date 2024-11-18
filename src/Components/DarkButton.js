@@ -23,7 +23,7 @@ const DarkButton = () => {
     };
 
     return(
-        <button type="button" id="dark-button" className={`dark-button margin-left ${isDarkMode ? 'active' : ''}`} onClick={toggleDarkMode}>
+        <button type="button" id="dark-button" className={`dark-button ${isDarkMode ? 'active' : ''}`} onClick={toggleDarkMode}>
             <span className="material-symbols-outlined moon text">bedtime</span>
             <span className="material-symbols-outlined sun text">light_mode</span>
         </button>
