@@ -46,7 +46,7 @@ function Header(){
                             <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
                         </a>
 
-                        <nav className='menu-container'>
+                        {/* <nav className='menu-container'>
                             <ul className='menu'>
                                 {t('menuLinks', { returnObjects: true }).map((menuLink) => (
                                     <li key={menuLink.id}>
@@ -65,11 +65,53 @@ function Header(){
                                     </li>
                                 ))}
                             </ul>
+                        </nav> */}
+
+                        <nav className='menu-container'>
+                            <ul className='menu'>
+                                {t('menuLinks', { returnObjects: true }).map((menuLink) => (
+                                    <li key={menuLink.id}>
+                                        {menuLink.id === 2 || menuLink.id === 5 ? (
+                                            <div className={`menu-link-container menu-link-container-${menuLink.id}`}>
+                                                <button className={`menu-link menu-link-${menuLink.id}`}>
+                                                    <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
+                                                    <h2>{menuLink.text}</h2>
+                                                    <span className="material-symbols-outlined icon-down">keyboard_arrow_down</span>
+                                                </button>
+
+                                                {menuLink.subHeader && (
+                                                    <ul className='sub-header'>
+                                                        {menuLink.subHeader.map((subItem) => (
+                                                            <li key={subItem.id}>
+                                                                <a href={subItem.href} className=''>
+                                                                    {/* <span className="material-symbols-outlined">{subItem.icon}</span> */}
+                                                                    <h3 className=''>{subItem.text}</h3>
+
+                                                                    <span className="material-symbols-outlined margin-left chevron-right">chevron_right</span>
+                                                                </a>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                )}
+                                            </div>
+                                        ) : (
+                                            <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
+                                                <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
+                                                <h2>{menuLink.text}</h2>
+                                            </a>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
                         </nav>
 
                         <button type='button' className='menu-icon margin-left'>
-                            <span className="material-symbols-outlined">menu</span>
-                            <span className="material-symbols-outlined">close</span>
+                            <p className='text'>Menu</p>
+                            
+                            <div>
+                                <span className="material-symbols-outlined hamburguer">menu</span>
+                                <span className="material-symbols-outlined menu-close">close</span>
+                            </div>
                         </button>
                     </div>
                 </div>
