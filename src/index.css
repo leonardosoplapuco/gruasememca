@@ -85,6 +85,8 @@ main{
     margin-top: 124px;
 }
 
+/**/
+
 .block-container{
     width: 100%;
     padding: 20px;
@@ -96,6 +98,26 @@ main{
     width: 100%;
     max-width: 1800px;
 }
+
+.block-title-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.block-title{
+    font-family: 'Anton';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: var(--text);
+}
+
+.block-title-container p{
+    width: 100%;
+    max-width: 50%;
+}
+
+/**/
 
 .d-flex{
     display: flex;
@@ -110,6 +132,11 @@ main{
 .d-flex-column{
     display: flex;
     flex-direction: column;
+}
+
+.d-grid-2-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .margin-bottom-20{
@@ -272,6 +299,45 @@ button{
 
 .margin-left{
     margin-left: auto;
+}
+
+/**/
+
+.faq{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-target{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-target-top{
+    width: 100%;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--black-9);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.faq-target-title{
+    color: var(--red);
+}
+
+.faq-target-content{
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+}
+
+.faq-target.active .faq-target-content{
+    height: auto;
 }
 
 /**/
