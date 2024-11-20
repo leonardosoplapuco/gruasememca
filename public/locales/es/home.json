@@ -15,5 +15,69 @@
             "twitterDescription": "Descripción para card de Twitter",
             "twitterImage": "url-icono"
         }
+    ],
+    "homeCompanies":[
+        {
+            "id": 1,
+            "companies":[
+                {
+                    "id": 1,
+                    "imgSrc": "/assets/images/clientes/ab-technology.webp",
+                    "imgAlt": "Ab Technology"
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "/assets/images/clientes/alpa.webp",
+                    "imgAlt": "ALPA"
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "/assets/images/clientes/binda.webp",
+                    "imgAlt": "Binda"
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "/assets/images/clientes/lepsa.webp",
+                    "imgAlt": "Lepsa"
+                },
+                {
+                    "id": 5,
+                    "imgSrc": "/assets/images/clientes/proyec.webp",
+                    "imgAlt": "Proyec"
+                },
+                {
+                    "id": 6,
+                    "imgSrc": "/assets/images/clientes/binda.webp",
+                    "imgAlt": "Binda"
+                },
+                {
+                    "id": 7,
+                    "imgSrc": "/assets/images/clientes/lepsa.webp",
+                    "imgAlt": "Lepsa"
+                },
+                {
+                    "id": 8,
+                    "imgSrc": "/assets/images/clientes/proyec.webp",
+                    "imgAlt": "Proyec"
+                },
+                {
+                    "id": 9,
+                    "imgSrc": "/assets/images/clientes/lepsa.webp",
+                    "imgAlt": "Lepsa"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Ver más",
+            "href": "/nosotros/clientes"
+        }
+    ],
+    "homeServices":[
+        {
+            "id": 1,
+            "title": "Servicios",
+            "textIntro": "Con más de 15 años de experiencia en el sector, ofreciendo servicios de izaje. asdass 9909 ajaklsdjaklñ fjjj lñksdjflñskdjf leonardo sopapuico"
+        }
     ]
 }

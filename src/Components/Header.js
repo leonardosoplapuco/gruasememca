@@ -45,28 +45,7 @@ function Header(){
 
                             <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
                         </a>
-
-                        {/* <nav className='menu-container'>
-                            <ul className='menu'>
-                                {t('menuLinks', { returnObjects: true }).map((menuLink) => (
-                                    <li key={menuLink.id}>
-                                        {menuLink.id === 2 || menuLink.id === 5 ? (
-                                            <button className={`menu-link menu-link-${menuLink.id}`}>
-                                                <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
-                                                <h2>{menuLink.text}</h2>
-                                                <span className="material-symbols-outlined icon-down">keyboard_arrow_down</span>
-                                            </button>
-                                        ) : (
-                                            <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
-                                                <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
-                                                <h2>{menuLink.text}</h2>
-                                            </a>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav> */}
-
+                        
                         <nav className='menu-container'>
                             <ul className='menu'>
                                 {t('menuLinks', { returnObjects: true }).map((menuLink) => (

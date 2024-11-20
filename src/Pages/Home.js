@@ -37,51 +37,49 @@ const Home = () => {
                     <section className="block-content d-flex-column gap-20">
                         <div className="home-companies">
                             <ul>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/ab-technology.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/alpa.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/binda.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/lepsa.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/proyec.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/sigelec.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/zinsa.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/sigelec.webp"></img>
-                                </li>
-                                <li>
-                                    <img className="" src="/assets/images/clientes/zinsa.webp"></img>
-                                </li>
+                                {t('homeCompanies', { returnObjects: true })[0]?.companies.map((company) => (
+                                    <li key={company.id}>
+                                        <img src={company.imgSrc} alt={company.imgAlt}></img>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
-                        <a href="" className="margin-left button-text-link button-text-link-1">
-                            <p className="button-link-text">Ver más</p>
+                        <a href={t('homeCompanies.1.href')} className="margin-left button-text-link button-text-link-1">
+                            <p className="button-link-text">{t('homeCompanies.1.text')}</p>
                             <span className="material-symbols-outlined">chevron_right</span>
                         </a>
                     </section>
                 </div>
 
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
-                <p>asadasdasdasdasdas</p>
+                <div className="block-container">
+                    <section className="block-content">
+                        <div className="block-title-container">
+                            <h3 className="block-title">{t('homeServices.0.title')}</h3>
+                            <p className="text">{t('homeServices.0.textIntro')}</p>
+                        </div>
+
+                        <div className="index-services d-grid-2-1 gap-20">
+                            <div className="index-services-target index-services-target-1">
+                                <ul className="faq">
+                                    <li className="faq-target faq-target-1">
+                                        <div className="faq-target-top">
+                                            <p className="faq-target-title">Título</p>
+                                            <span className="material-symbols-outlined">chevron_right</span>
+                                        </div>
+
+                                        <div className="faq-target-content d-flex-column">
+                                            <p className="text">hajsdljasñdajslñdj</p>
+                                            <p className="text">hajsdljassss ñdajslñdj</p>
+                                            <p className="text">hajsdljasñdajslñdj</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="index-services-target index-services-target-2"></div>
+                        </div>
+                    </section>
+                </div>
             </main>
 
         </>
