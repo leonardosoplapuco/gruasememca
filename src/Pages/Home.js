@@ -53,7 +53,7 @@ const Home = () => {
                 </div>
 
                 <div className="block-container">
-                    <section className="block-content">
+                    <section className="block-content d-flex-column gap-20">
                         <div className="block-title-container">
                             <h3 className="block-title">{t('homeServices.0.title')}</h3>
                             <p className="text">{t('homeServices.0.textIntro')}</p>
@@ -62,22 +62,58 @@ const Home = () => {
                         <div className="index-services d-grid-2-1 gap-20">
                             <div className="index-services-target index-services-target-1">
                                 <ul className="faq">
-                                    <li className="faq-target faq-target-1">
-                                        <div className="faq-target-top">
-                                            <p className="faq-target-title">Título</p>
-                                            <span className="material-symbols-outlined">chevron_right</span>
-                                        </div>
-
-                                        <div className="faq-target-content d-flex-column">
-                                            <p className="text">hajsdljasñdajslñdj</p>
-                                            <p className="text">hajsdljassss ñdajslñdj</p>
-                                            <p className="text">hajsdljasñdajslñdj</p>
-                                        </div>
-                                    </li>
+                                    {t("homeServicesFaq", { returnObjects: true }).map((faq) => (
+                                        <li key={faq.id} className={`faq-target faq-target-${faq.id}`}>
+                                            <div className="faq-target-top">
+                                                <p className="faq-target-title">{faq.title}</p>
+                                                <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                            <div className="faq-target-content d-flex-column">
+                                                {faq.content.map((item) => (
+                                                    <div>
+                                                        <span className="material-symbols-outlined">check</span>
+                                                        <p key={item.id} className="text">{item.text}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
-                            <div className="index-services-target index-services-target-2"></div>
+
+                            <div className="index-services-target index-services-target-2 d-flex-column gap-20">
+                                <video src="https://www.gruasememca.com/media/videos/video-1.webm" className="video-simple" controls></video>
+
+                                <ul className='list-simple margin-bottom-20'>
+                                    {t('homeServicesTagTwo', { returnObjects: true }).map((item) => (
+                                        <li key={item.id}>
+                                            <span className="material-symbols-outlined list-icon-check">check</span>
+                                            <p>{item.text}</p>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
+                    </section>
+                </div>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <ul className="home-beneficts">
+                            {t('homeBeneficts', { returnObjects: true }).map((item) => (
+                                <li key={item.id}>
+                                    <img src={item.img}></img>
+                                    <p className="text-title">{item.title}</p>
+                                    <p className="text">{item.text}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                </div>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </section>
                 </div>
             </main>

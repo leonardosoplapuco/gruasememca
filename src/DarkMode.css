@@ -92,3 +92,17 @@
 .dark-mode .hero-card h1 b{
     color: var(--white);
 }
+
+/**/
+
+.dark-mode .faq-target-title{
+    color: var(--white);
+}
+
+.dark-mode .home-beneficts li{
+    background: rgba(255 255 255 / 0.075);
+}
+
+.dark-mode .home-beneficts li img{
+    filter: brightness(100000%);
+}
