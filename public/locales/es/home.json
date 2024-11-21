@@ -54,16 +54,6 @@
                     "id": 7,
                     "imgSrc": "/assets/images/clientes/lepsa.webp",
                     "imgAlt": "Lepsa"
-                },
-                {
-                    "id": 8,
-                    "imgSrc": "/assets/images/clientes/proyec.webp",
-                    "imgAlt": "Proyec"
-                },
-                {
-                    "id": 9,
-                    "imgSrc": "/assets/images/clientes/lepsa.webp",
-                    "imgAlt": "Lepsa"
                 }
             ]
         },
@@ -77,7 +67,95 @@
         {
             "id": 1,
             "title": "Servicios",
-            "textIntro": "Con más de 15 años de experiencia en el sector, ofreciendo servicios de izaje. asdass 9909 ajaklsdjaklñ fjjj lñksdjflñskdjf leonardo sopapuico"
+            "textIntro": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+        }
+    ],
+    "homeServicesFaq":[
+        {
+            "id": 1,
+            "title": "Alquiler de grúas telescópicas",
+            "content":[
+                {
+                    "id": 1,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                },
+                {
+                    "id": 2,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Servicios de izaje",
+            "content":[
+                {
+                    "id": 1,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                },
+                {
+                    "id": 2,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Montaje y desmontaje",
+            "content":[
+                {
+                    "id": 1,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                },
+                {
+                    "id": 2,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Eliminación de tierra",
+            "content":[
+                {
+                    "id": 1,
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                }
+            ]
+        }
+    ],
+    "homeServicesTagTwo":[
+        {
+            "id": 1,
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        },
+        {
+            "id": 2,
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+            "id": 3,
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's."
+        }
+    ],
+    "homeBeneficts":[
+        {
+            "id": 1,
+            "img": "/assets/images/icons/alquiler-de-camiones-grua-icono.png",
+            "title": "Seguridad y garantía",
+            "text": "Con más de 15 años de experiencia, garantizamos seguridad y éxito en nuestros servicios."
+        },
+        {
+            "id": 2,
+            "img": "/assets/images/icons/alquiler-de-camiones-grua-icono.png",
+            "title": "Operadores certificados",
+            "text": "Nuestros operadores están en constante capacitación."
+        },
+        {
+            "id": 3,
+            "img": "/assets/images/icons/alquiler-de-camiones-grua-icono.png",
+            "title": "Grúas certificadas",
+            "text": "De disponibilidad inmediata."
         }
     ]
 }

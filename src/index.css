@@ -96,7 +96,7 @@ main{
 .block-content{
     margin: auto;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1600px;
 }
 
 .block-title-container{
@@ -159,6 +159,8 @@ main{
     gap: 20px;
 }
 
+/**/
+
 .list-simple{
     display: flex;
     flex-direction: column;
@@ -180,6 +182,19 @@ main{
     height: auto;
     object-fit: cover;
     border-radius: 6px;
+}
+
+.video-simple{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/**/
+
+.text-title{
+    font-size: 20px;
 }
 
 .text{
@@ -321,23 +336,62 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid var(--black-9);
-    padding: 10px 20px;
+    /* border-bottom: 2px solid var(--black-9); */
+    border-bottom: 2px solid var(--red);
+    padding: 10px 0;
+    position: relative;
     cursor: pointer;
+}
+
+.faq-target-top::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* height: calc(100% - 4px); */
+    border-radius: 6px 6px 0 0;
+    z-index: -1;
+    display: none;
+}
+
+.faq-target-top:hover::before{
+    background: rgba(218 19 31 / 0.075);
 }
 
 .faq-target-title{
     color: var(--red);
+    font-size: 20px;
+}
+
+.faq-target-top span{
+    color: var(--red);
+    display: none;
 }
 
 .faq-target-content{
     width: 100%;
+    /* height: 0; */
     overflow: hidden;
-    height: 0;
+    interpolate-size: allow-keyworks;
 }
 
 .faq-target.active .faq-target-content{
     height: auto;
+}
+
+.faq-target-content{
+    padding: 10px 0;
+}
+
+.faq-target .faq-target-content div{
+    display: flex;
+    gap: 5px;
+}
+
+.faq-target .faq-target-content div span{
+    color: var(--check);
 }
 
 /**/
@@ -378,7 +432,7 @@ header{
     margin: auto;
     width: 100%;
     height: 100%;
-    max-width: 1800px;
+    max-width: 1600px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -712,8 +766,8 @@ header{
 
 .hero-container{
     width: 100%;
-    /* height: calc(100vh - 124px);
-    max-height: 1000px; */
+    height: calc(100vh - 124px);
+    max-height: 1000px;
     padding: 20px;
 }
 
@@ -721,7 +775,7 @@ header{
     margin: auto;
     width: 100%;
     height: 100%;
-    max-width: 1800px;
+    max-width: 1600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -814,6 +868,34 @@ header{
 
 /**/
 
+.home-beneficts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-beneficts li{
+    width: 100%;
+    flex: 1 1 clamp(200px, calc(calc(100% / 3) - calc(40px / 3)), 100%);
+    max-width: calc(calc(100% / 3) - calc(40px / 3));
+    padding: 20px;
+    border-radius: 6px;
+    background: rgba(218 19 31 / 0.075);
+}
+
+.home-beneficts li .text-title{
+    font-weight: 900;
+}
+
+.home-beneficts li img{
+    width: 50px;
+    height: 50px;
+}
+
+/**/
+
 @media screen and (max-width: 800px){
 
     *{
@@ -878,8 +960,24 @@ header{
     .header-top .button-link-1{
         display: none;
     }
+    
+    /**/
+
+    .block-container p{
+        max-width: none;
+    }
+
+    .d-grid-2-1{
+        grid-template-columns: 1fr;
+    }
 
     /**/
+
+    .hero-container{
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
 
     .hero{
         gap: 10px;
@@ -913,5 +1011,16 @@ header{
     .home-companies ul li img{
         width: 100px;
         height: 60px;
+    }
+
+    /**/
+
+    .home-beneficts{
+        flex-direction: column;
+    }
+
+    .home-beneficts li{
+        flex: 1 1 clamp(200px, calc(calc(100% / 2) - calc(40px / 2)), 100%);
+        max-width: none;
     }
 }
