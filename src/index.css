@@ -96,7 +96,7 @@ main{
 .block-content{
     margin: auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
 .block-title-container{
@@ -432,7 +432,7 @@ header{
     margin: auto;
     width: 100%;
     height: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -775,7 +775,7 @@ header{
     margin: auto;
     width: 100%;
     height: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
