@@ -16,6 +16,13 @@
             "twitterImage": "url-icono"
         }
     ],
+    "hero":[
+        {
+            "id": 1,
+            "h1": "Welcome to",
+            "h1Span": "Grúas Ememca"
+        }
+    ],
     "homeCompanies":[
         {
             "id": 1,
