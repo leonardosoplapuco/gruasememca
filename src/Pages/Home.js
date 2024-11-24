@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 // import Header from '../Components/Header';
 import Hero from '../Components/Hero';
+import HeroVideo from '../Components/heroVideo';
 // import ChatBot from '../Components/ChatBot'
 
 const Home = () => {
@@ -27,14 +28,89 @@ const Home = () => {
                 <meta name="twitter:image" content={t('head.0.twitterImage')} />
             </Helmet>
 
-            {/* <Header/> */}
+            <HeroVideo/>
 
             <main>
-                <Hero title={t('hero.0.h1')} titleSpan={t('hero.0.h1Span')} />
+
+                <div className="home-hero-container">
+                    <section className="home-hero">
+                        <h2 className="name">{t('hero.0.name.0.nameOne')} <span>{t('hero.0.name.0.nameTwo')}</span></h2>
+
+                        <h1>{t('hero.0.h1')} <span>{t('hero.0.h1Span')}</span></h1>
+
+                        <div className="home-hero-content d-flex-column gap-20">
+                            <ul className="list-simple">
+                                <li>
+                                    <span className="material-symbols-outlined">check_circle</span>
+                                    <p className="text">{t('hero.0.text')}</p>
+                                </li>
+                            </ul>
+
+                            <ul className="d-flex gap-10">
+                                <li>
+                                    <a href={t('hero.0.links.0.href')} className="button-link hero-link-2">
+                                        <p className="">{t('hero.0.links.0.text')}</p>
+                                        <span className="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href={t('hero.0.links.1.href')} className="button-link button-link-1">
+                                        <span className="material-symbols-outlined">phone_in_talk</span>
+                                        <p className="">{t('hero.0.links.1.text')}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div className="block-container">
+                    <section className="block-content d-grid-2-1 gap-20">
+                        <div className="d-flex-column">
+                            <div className="block-title-container">
+                                <h3>{t('us.0.titleH3')}</h3>
+                            </div>
+
+                            <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="img-simple"></img>
+                        </div>
+
+                        <div className="d-flex-column gap-20">
+                            <p className="text">{t('us.0.text')}</p>
+                            <ul className="d-flex gap-20  margin-left">
+                                <li>
+                                    <a href={t('us.0.link.0.href')} className="button-link button-link-1">
+                                        <span className="material-symbols-outlined">diversity_3</span>
+                                        <p className="button-link-text">{t('us.0.link.0.text')}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
 
                 <div className="block-container">
                     <section className="block-content">
-                        
+                        <div className="block-title-container">
+                            <h3>{t('clients.0.titleH3')}</h3>
+                        </div>
+
+                        <div className="home-clients-container">
+                            <ul className="home-clients">
+                                {t("clients.0.imgs", { returnObjects: true }).map((img) => (
+                                    <li key={img.id}>
+                                        <img src={img.imgSrc} alt={img.imgAlt} className="client-image" />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <div className="block-title-container">
+                            <h3>Servicios</h3>
+                        </div>
                     </section>
                 </div>
             </main>

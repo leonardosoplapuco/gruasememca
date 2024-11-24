@@ -19,124 +19,40 @@
     "hero":[
         {
             "id": 1,
-            "h1": "Welcome to",
-            "h1Span": "Grúas Ememca"
+            "name":[
+                {
+                    "nameOne": "Grúas",
+                    "nameTwo": "Ememca"
+                }
+            ],
+            "h1": "Telescopic",
+            "h1Span": "crane rental",
+            "text": "Somos especialistas en el alquiler de grúas telescópicas con más de 15 años de experiencia ofreciendo garantía y seguridad. Realizamos servicios de izaje para contenedores, maquinaria pesada, estructuras, y más.",
+            "links":[
+                {
+                    "id": 1,
+                    "href": "/en/about-us/",
+                    "text": "More about us"
+                },
+                {
+                    "id": 2,
+                    "href": "tel: +51998877665",
+                    "text": "Call us now"
+                }
+            ]
         }
     ],
-    "homeCompanies":[
+    "us":[
         {
             "id": 1,
-            "companies":[
+            "titleH3": "About us",
+            "imgAlt": "Image of the Grúas Ememca team",
+            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "link":[
                 {
                     "id": 1,
-                    "imgSrc": "/assets/images/clientes/ab-technology.webp",
-                    "imgAlt": "Ab Technology"
-                },
-                {
-                    "id": 2,
-                    "imgSrc": "/assets/images/clientes/alpa.webp",
-                    "imgAlt": "ALPA"
-                },
-                {
-                    "id": 3,
-                    "imgSrc": "/assets/images/clientes/binda.webp",
-                    "imgAlt": "Binda"
-                },
-                {
-                    "id": 4,
-                    "imgSrc": "/assets/images/clientes/lepsa.webp",
-                    "imgAlt": "Lepsa"
-                },
-                {
-                    "id": 5,
-                    "imgSrc": "/assets/images/clientes/proyec.webp",
-                    "imgAlt": "Proyec"
-                },
-                {
-                    "id": 6,
-                    "imgSrc": "/assets/images/clientes/binda.webp",
-                    "imgAlt": "Binda"
-                },
-                {
-                    "id": 7,
-                    "imgSrc": "/assets/images/clientes/lepsa.webp",
-                    "imgAlt": "Lepsa"
-                },
-                {
-                    "id": 8,
-                    "imgSrc": "/assets/images/clientes/proyec.webp",
-                    "imgAlt": "Proyec"
-                },
-                {
-                    "id": 9,
-                    "imgSrc": "/assets/images/clientes/lepsa.webp",
-                    "imgAlt": "Lepsa"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "text": "See more",
-            "href": "/about-us/customers"
-        }
-    ],
-    "homeServices":[
-        {
-            "id": 1,
-            "title": "Services",
-            "textIntro": "leoleoejalsdhlasdhjklsadh 111212 22"
-        }
-    ],
-    "homeServicesFaq":[
-        {
-            "id": 1,
-            "title": "Telescopic crane rental",
-            "content":[
-                {
-                    "id": 1,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                },
-                {
-                    "id": 2,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Lifting services",
-            "content":[
-                {
-                    "id": 1,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                },
-                {
-                    "id": 2,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "title": "Assembly and disassembly",
-            "content":[
-                {
-                    "id": 1,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                },
-                {
-                    "id": 2,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "title": "Land removal",
-            "content":[
-                {
-                    "id": 1,
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                    "href": "/en/about-us/",
+                    "text": "More about us"
                 }
             ]
         }
