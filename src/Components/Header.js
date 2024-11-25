@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import DarkButton from './DarkButton';
-import LanguageSwitcher from './Languages';
+// import DarkButton from './DarkButton';
+// import LanguageSwitcher from './Languages';
 
 function Header(){
     const { t } = useTranslation('header');
@@ -10,90 +10,84 @@ function Header(){
     return (
         <header>
             <div className='header'>
-                <div className='header-top-container'>
-                    <div className='header-top'>
-                        <a href={t('logo.0.href')} className='logo'>
-                            <h2 className='font-anton'>Grúas <b className='font-anton'>Ememca</b></h2>
-                        </a>
+                <a href={t('logo.0.href')} className='header-logo'>
+                    <p>Grúas <span>Ememca</span></p>
+                </a>
 
-                        <LanguageSwitcher/>
+                <nav className='menu-container'>
+                    <ul className="menu">
+                        <li>
+                            <button type='button' className='menu-link menu-link-1'>
+                                <span className="material-symbols-outlined menu-link-icon">handshake</span>
+                                <h2 className=''>{t('menuLinks.0.text')}</h2>
+                                <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                            </button>
 
-                        <span className='text'>|</span>
+                            <div className='sub-header-container'>
+                                <ul className='sub-header'>
+                                    <li>
+                                        <a href={t('menuLinks.0.subHeader.0.href')} className=''>
+                                            <h2 className=''>{t('menuLinks.0.subHeader.0.text')}</h2>
+                                            <span className="material-symbols-outlined">chevron_right</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href={t('menuLinks.0.subHeader.1.href')} className=''>
+                                            <h2 className=''>{t('menuLinks.0.subHeader.1.text')}</h2>
+                                            <span className="material-symbols-outlined">chevron_right</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href={t('menuLinks.0.subHeader.2.href')} className=''>
+                                            <h2 className=''>{t('menuLinks.0.subHeader.2.text')}</h2>
+                                            <span className="material-symbols-outlined">chevron_right</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href={t('menuLinks.0.subHeader.3.href')} className=''>
+                                            <h2 className=''>{t('menuLinks.0.subHeader.3.text')}</h2>
+                                            <span className="material-symbols-outlined">chevron_right</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href={t('menuLinks.1.href')} className='menu-link menu-link-1'>
+                                <span className="material-symbols-outlined menu-link-icon">handshake</span>
+                                <h2 className=''>{t('menuLinks.1.text')}</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <button type='button' className='menu-link menu-link-1'>
+                                <span className="material-symbols-outlined menu-link-icon">handshake</span>
+                                <h2 className=''>{t('menuLinks.2.text')}</h2>
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href={t('menuLinks.3.href')}className='menu-link menu-link-1'>
+                                <span className="material-symbols-outlined menu-link-icon">handshake</span>
+                                <h2 className=''>{t('menuLinks.3.text')}</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href={t('menuLinks.4.href')}className='menu-link menu-link-1'>
+                                <span className="material-symbols-outlined menu-link-icon">handshake</span>
+                                <h2 className=''>{t('menuLinks.4.text')}</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                        <DarkButton/>
-
-                        <span className='text header-span-2'>|</span>
-
-                        <a href={t('headerTopContactLinks.0.href')} className='button-text-link button-text-link-1' >
+                <ul>
+                    <li>
+                        <a href={t('headerTopContactLinks.0.href')} className='button-link button-link-1'>
+                            <span className="material-symbols-outlined">phone_in_talk</span>
                             <p className='button-link-text'>{t('headerTopContactLinks.0.text')}</p>
                         </a>
-
-                        <a href='+51 998877665' className='button-link button-link-1 button-call'>
-                            <span className="material-symbols-outlined">phone_in_talk</span>
-                            <p className='button-link-text'>{t('headerTopContactLinks.1.text')}</p>
-
-                            <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div className='header-bottom-container'>
-                    <div className='header-bottom'>
-                        <a href='+51 998877665' className='button-link button-link-1 button-call'>
-                            <span className="material-symbols-outlined">phone_in_talk</span>
-                            <p className='button-link-text'>{t('headerTopContactLinks.1.text')}</p>
-
-                            <span className='button-link-label'>{t('headerTopContactLinks.1.label')}</span>
-                        </a>
-                        
-                        <nav className='menu-container'>
-                            <ul className='menu'>
-                                {t('menuLinks', { returnObjects: true }).map((menuLink) => (
-                                    <li key={menuLink.id}>
-                                        {menuLink.id === 2 || menuLink.id === 5 ? (
-                                            <div className={`menu-link-container menu-link-container-${menuLink.id}`}>
-                                                <button className={`menu-link menu-link-${menuLink.id}`}>
-                                                    <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
-                                                    <h2>{menuLink.text}</h2>
-                                                    <span className="material-symbols-outlined icon-down">keyboard_arrow_down</span>
-                                                </button>
-
-                                                {menuLink.subHeader && (
-                                                    <ul className='sub-header'>
-                                                        {menuLink.subHeader.map((subItem) => (
-                                                            <li key={subItem.id}>
-                                                                <a href={subItem.href} className=''>
-                                                                    {/* <span className="material-symbols-outlined">{subItem.icon}</span> */}
-                                                                    <h3 className=''>{subItem.text}</h3>
-
-                                                                    <span className="material-symbols-outlined margin-left chevron-right">chevron_right</span>
-                                                                </a>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                )}
-                                            </div>
-                                        ) : (
-                                            <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
-                                                <span className="material-symbols-outlined icon-representation">{menuLink.icon}</span>
-                                                <h2>{menuLink.text}</h2>
-                                            </a>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
-
-                        <button type='button' className='menu-icon margin-left'>
-                            <p className='text'>Menu</p>
-                            
-                            <div>
-                                <span className="material-symbols-outlined hamburguer">menu</span>
-                                <span className="material-symbols-outlined menu-close">close</span>
-                            </div>
-                        </button>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </header>
     );

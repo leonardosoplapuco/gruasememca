@@ -7,57 +7,36 @@
     "headerTopContactLinks":[
         {
             "id": 1,
-            "icon": "mail",
-            "text": "contacto@gruasememca.com",
-            "href": "mailto: contacto@gruasememca.com"
-        },
-        {
-            "id": 2,
             "icon": "phone_in_talk",
-            "text": "998877665",
-            "href": "tel: +51998877665",
-            "label": "Llámanos ahora"
+            "text": "LLamar ahora",
+            "href": "tel: +51989361291"
         }
     ],
     "menuLinks":[
         {
             "id": 1,
-            "icon": "mail",
-            "text": "Inicio",
-            "href": "/es/"
-        },
-        {
-            "id": 2,
-            "icon": "handshake",
             "text": "Servicios",
-            "href": "/es/servicios/",
             "subHeader":[
                 {
                     "id": 1,
-                    "icon": "handshake",
-                    "text": "Servicios",
-                    "href": "/es/servicios/"
-                },
-                {
-                    "id": 2,
                     "icon": "auto_towing",
                     "text": "Alquiler de grúas telescópicas",
                     "href": "/es/servicios/alquiler-de-gruas-telescopicas"
                 },
                 {
-                    "id": 3,
+                    "id": 2,
                     "icon": "auto_towing",
                     "text": "Izaje",
                     "href": "/es/servicios/izaje/"
                 },
                 {
-                    "id": 4,
+                    "id": 3,
                     "icon": "auto_towing",
                     "text": "Montaje y desmontaje",
                     "href": "/es/servicios/montaje-y-desmontaje"
                 },
                 {
-                    "id": 5,
+                    "id": 4,
                     "icon": "auto_towing",
                     "text": "Eliminación de tierra",
                     "href": "/es/servicios/eliminicacion-de-tierra"
@@ -65,19 +44,13 @@
             ]
         },
         {
-            "id": 3,
+            "id": 2,
             "icon": "auto_towing",
             "text": "Maquinaria",
             "href": "/es/maquinaria/"
         },
         {
-            "id": 4,
-            "icon": "work",
-            "text": "Proyectos",
-            "href": "/es/proyectos/"
-        },
-        {
-            "id": 5,
+            "id": 3,
             "icon": "diversity_3",
             "text": "Nosotros",
             "href": "/es/nosotros/",
@@ -103,16 +76,16 @@
             ]
         },
         {
-            "id": 6,
+            "id": 4,
             "icon": "mail",
             "text": "Clientes",
             "href": "/es/nosotros/clientes"
         },
         {
-            "id": 7,
+            "id": 5,
             "icon": "newspaper",
             "text": "Blog",
-            "href": "https://blog-gruasememca.vercel.app/es/"
+            "href": ""
         }
     ]
 }

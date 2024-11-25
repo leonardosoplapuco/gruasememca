@@ -7,16 +7,9 @@
     "headerTopContactLinks":[
         {
             "id": 1,
-            "icon": "mail",
-            "text": "contact@gruasememca.com",
-            "href": "mailto: contact@gruasememca.com"
-        },
-        {
-            "id": 2,
             "icon": "phone_in_talk",
-            "text": "998877665",
-            "href": "tel: +51998877665",
-            "label": "Call us now"
+            "text": "Call us now",
+            "href": "tel: +51989361291"
         }
     ],
     "menuLinks":[
