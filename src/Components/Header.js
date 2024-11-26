@@ -1,9 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-// import DarkButton from './DarkButton';
-// import LanguageSwitcher from './Languages';
-
 function Header(){
     const { t } = useTranslation('header');
 
@@ -82,12 +79,17 @@ function Header(){
 
                 <ul>
                     <li>
-                        <a href={t('headerTopContactLinks.0.href')} className='button-link button-link-1'>
+                        <a href={t('headerTopContactLinks.0.href')} className='button-link button-link-1 call-button'>
                             <span className="material-symbols-outlined">phone_in_talk</span>
                             <p className='button-link-text'>{t('headerTopContactLinks.0.text')}</p>
                         </a>
                     </li>
                 </ul>
+
+                <button className='menu-icon'>
+                    <span className="material-symbols-outlined">menu</span>
+                    <span className="material-symbols-outlined">close</span>
+                </button>
             </div>
         </header>
     );
