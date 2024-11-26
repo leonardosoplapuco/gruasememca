@@ -68,32 +68,34 @@ const Home = () => {
                             </div>
 
                             <div className="d-flex">
-                                <img src="/assets/images/gruas/crane.png" alt="" className="hero-img"></img>
+                                <img src="/assets/images/gruas/crane.png" alt="" className="home-hero-img"></img>
                             </div>
                         </div>
                     </section>
                 </div>
 
                 <div className="block-container">
-                    <section className="block-content d-grid-2-1 gap-20">
-                        <div className="d-flex-column">
-                            <div className="block-title-container">
-                                <h3>{t('us.0.titleH3')}</h3>
-                            </div>
-
-                            <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="img-simple"></img>
+                    <section className="block-content">
+                        <div className="block-title-container">
+                            <h3>{t('us.0.titleH3')}</h3>
                         </div>
 
-                        <div className="d-flex-column gap-20">
-                            <p className="text">{t('us.0.text')}</p>
-                            <ul className="d-flex gap-20  margin-left">
-                                <li>
-                                    <a href={t('us.0.link.0.href')} className="button-link button-link-1">
-                                        <span className="material-symbols-outlined">diversity_3</span>
-                                        <p className="button-link-text">{t('us.0.link.0.text')}</p>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div className="d-grid-2-1 gap-20">
+                            <div className="d-flex-column">
+                                <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="img-simple"></img>
+                            </div>
+
+                            <div className="d-flex-column gap-20">
+                                <p className="text">{t('us.0.text')}</p>
+                                <ul className="d-flex gap-20  margin-left">
+                                    <li>
+                                        <a href={t('us.0.link.0.href')} className="button-link button-link-1">
+                                            <span className="material-symbols-outlined">diversity_3</span>
+                                            <p className="button-link-text">{t('us.0.link.0.text')}</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
                 </div>
