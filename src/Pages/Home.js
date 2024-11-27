@@ -128,6 +128,18 @@ const Home = () => {
                         <div className="block-title-container">
                             <h3>{t('services.0.titleH3')}</h3>
                         </div>
+
+                        <div className="home-services-container">
+                            <ul className="home-services">
+                                <li>
+                                    <a className="home-service home-service-1 hover-target">
+                                        asdasdasd
+                                    </a>
+
+                                    <p className="hover-target">09182803109210293</p>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
 

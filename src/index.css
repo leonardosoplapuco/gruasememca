@@ -79,6 +79,7 @@ body{
     background: var(--body);
     color: var(--text);
     transition: var(--t-100);
+    cursor: none;
 }
 
 /**/
@@ -351,6 +352,10 @@ button{
 .button-link-2 span,
 .button-link-2 .button-link-text{
     color: var(--red);
+}
+
+.link-text:hover .button-link-text{
+    text-decoration: underline;
 }
 
 .link-text-1 .button-link-text{

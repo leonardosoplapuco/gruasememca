@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import CustomCursor from "./Components/customCursor/customCursor";
+
 import Home from './Pages/Home';
 
 import Services from './Pages/Services';
@@ -39,6 +41,8 @@ function App(){
                 <Route path="/es/servicios/alquiler-de-gruas-telescopicas" element={<Services/>}/>
                 <Route path="/en/services/telescopic-crane-rental" element={<Services/>}/>
             </Routes>
+
+            <CustomCursor />
         </>
     );
 }
