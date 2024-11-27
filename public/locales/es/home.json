@@ -118,7 +118,41 @@
     "services":[
         {
             "id": 1,
-            "titleH3": "Servicios"
+            "titleH3": "Servicios",
+            "list":[
+                {
+                    "id": 1,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Alquiler de gruas telescopicas | Grúas Ememca",
+                    "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                    "text": "Alquiler de grúas telescópicas",
+                    "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Servicios de izaje | Grúas Ememca",
+                    "href": "/es/servicios/izaje",
+                    "text": "Izaje",
+                    "description": "Servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Montaje y desmontaje | Grúas Ememca",
+                    "href": "/es/servicios/montaje-y-desmontaje",
+                    "text": "Montaje y desmontaje",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Eliminación de tierra | Grúas Ememca",
+                    "href": "/es/servicios/eliminacion-de-tierra",
+                    "text": "Eliminación de tierra",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                }
+            ]
         }
     ]
 }

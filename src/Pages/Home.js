@@ -131,13 +131,16 @@ const Home = () => {
 
                         <div className="home-services-container">
                             <ul className="home-services">
-                                <li>
-                                    <a className="home-service home-service-1 hover-target">
-                                        asdasdasd
-                                    </a>
-
-                                    <p className="hover-target">09182803109210293</p>
-                                </li>
+                                {t("services.0.list", { returnObjects: true }).map((item) => (
+                                    <li key={item.id}>
+                                        <a href={item.href} className="hover-target">
+                                            <img src={item.imgSrc}></img>
+                                            <div className="d-flex">
+                                                <p>{item.text}</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </section>
