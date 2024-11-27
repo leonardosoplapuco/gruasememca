@@ -52,53 +52,19 @@ function Header(){
 
                                         <div className='sub-header-content-list'>
                                             <ul>
-                                                <li>
-                                                    <a href={t('menuLinks.0.subHeader.1.links.0.src')} className='d-flex gap-10'>
-                                                        <div className='sub-header-img'>
-                                                            <img src={t('menuLinks.0.subHeader.1.links.0.imgSrc')} alt={t('menuLinks.0.subHeader.1.links.0.imgAlt')}></img>
-                                                        </div>
-                                                        <div className='d-flex-column'>
-                                                            <h3>{t('menuLinks.0.subHeader.1.links.0.text')}</h3>
-                                                            <p className="text">{t('menuLinks.0.subHeader.1.links.0.description')}</p>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href={t('menuLinks.0.subHeader.1.links.1.src')} className='d-flex gap-10'>
-                                                        <div className='sub-header-img'>
-                                                            <img src={t('menuLinks.0.subHeader.1.links.1.imgSrc')} alt={t('menuLinks.0.subHeader.1.links.1.imgAlt')}></img>
-                                                        </div>
-                                                        <div className='d-flex-column'>
-                                                            <h3>{t('menuLinks.0.subHeader.1.links.1.text')}</h3>
-                                                            <p className="text">{t('menuLinks.0.subHeader.1.links.1.description')}</p>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href={t('menuLinks.0.subHeader.1.links.2.src')} className='d-flex gap-10'>
-                                                        <div className='sub-header-img'>
-                                                            <img src={t('menuLinks.0.subHeader.1.links.2.imgSrc')} alt={t('menuLinks.0.subHeader.1.links.2.imgAlt')}></img>
-                                                        </div>
-                                                        <div className='d-flex-column'>
-                                                            <h3>{t('menuLinks.0.subHeader.1.links.2.text')}</h3>
-                                                            <p className="text">{t('menuLinks.0.subHeader.1.links.2.description')}</p>
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href={t('menuLinks.0.subHeader.1.links.3.src')} className='d-flex gap-10'>
-                                                        <div className='sub-header-img'>
-                                                            <img src={t('menuLinks.0.subHeader.1.links.3.imgSrc')} alt={t('menuLinks.0.subHeader.1.links.3.imgAlt')}></img>
-                                                        </div>
-                                                        <div className='d-flex-column'>
-                                                            <h3>{t('menuLinks.0.subHeader.1.links.3.text')}</h3>
-                                                            <p className="text">{t('menuLinks.0.subHeader.1.links.3.description')}</p>
-                                                        </div>
-                                                    </a>
-                                                </li>
+                                                {t("menuLinks.0.subHeader.1.links", { returnObjects: true }).map((item) => (
+                                                    <li key={item.id}>
+                                                        <a href={item.href} className='d-flex gap-10 hover-target'>
+                                                            <div className='sub-header-img'>
+                                                                <img src={item.imgSrc} alt={item.imgAlt}></img>
+                                                            </div>
+                                                            <div className='d-flex-column'>
+                                                                <h3>{item.text}</h3>
+                                                                <p className="text">{item.description}</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                ))}
                                             </ul>
                                         </div>
                                     </div>

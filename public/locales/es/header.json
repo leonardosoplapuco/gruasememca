@@ -31,7 +31,7 @@
                             "id": 1,
                             "imgSrc": "/assets/images/icons/grua.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/es/servicios/alquiler-de-gruas-telescopicas",
+                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
                             "text": "Alquiler de grúas telescópicas",
                             "description": "Contamos con nuestra propia flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
                         },
@@ -39,7 +39,7 @@
                             "id": 2,
                             "imgSrc": "/assets/images/icons/izaje.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/es/servicios/izaje",
+                            "href": "/es/servicios/izaje",
                             "text": "Izaje",
                             "description": "Realizamos servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
                         },
@@ -47,7 +47,7 @@
                             "id": 3,
                             "imgSrc": "/assets/images/icons/grua.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/es/servicios/montaje-y-desmontaje",
+                            "href": "/es/servicios/montaje-y-desmontaje",
                             "text": "Montaje y desmontaje",
                             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
                         },
@@ -55,7 +55,7 @@
                             "id": 4,
                             "imgSrc": "/assets/images/icons/eliminacion-de-tierra.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/es/servicios/eliminacion-de-tierra",
+                            "href": "/es/servicios/eliminacion-de-tierra",
                             "text": "Eliminación de tierra",
                             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
                         }
