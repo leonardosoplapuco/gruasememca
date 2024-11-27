@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '../Components/Header';
 // import Hero from '../Components/Hero';
 import HeroVideo from '../Components/heroVideo';
+import BlogTargets from '../Components/BlogTargets';
 // import ChatBot from '../Components/ChatBot'
 
 const Home = () => {
@@ -43,7 +44,11 @@ const Home = () => {
                                 <h1>{t('hero.0.h1')} <span>{t('hero.0.h1Span')}</span></h1>
 
                                 <div className="d-flex-column gap-20">
-                                    <ul className="list-simple">
+                                    <ul className="list-simple gap-10">
+                                        <li>
+                                            <span className="material-symbols-outlined">check_circle</span>
+                                            <p className="text mx-width-500">{t('hero.0.text')}</p>
+                                        </li>
                                         <li>
                                             <span className="material-symbols-outlined">check_circle</span>
                                             <p className="text mx-width-500">{t('hero.0.text')}</p>
@@ -125,6 +130,8 @@ const Home = () => {
                         </div>
                     </section>
                 </div>
+
+                <BlogTargets/>
             </main>
 
         </>
