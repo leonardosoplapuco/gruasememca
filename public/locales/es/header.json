@@ -33,7 +33,7 @@
                             "imgAlt": "gruas ememca",
                             "href": "/es/servicios/alquiler-de-gruas-telescopicas",
                             "text": "Alquiler de grúas telescópicas",
-                            "description": "Contamos con nuestra propia flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
+                            "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
                         },
                         {
                             "id": 2,
@@ -41,7 +41,7 @@
                             "imgAlt": "gruas ememca",
                             "href": "/es/servicios/izaje",
                             "text": "Izaje",
-                            "description": "Realizamos servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
+                            "description": "Servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
                         },
                         {
                             "id": 3,
@@ -49,7 +49,7 @@
                             "imgAlt": "gruas ememca",
                             "href": "/es/servicios/montaje-y-desmontaje",
                             "text": "Montaje y desmontaje",
-                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
+                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                         },
                         {
                             "id": 4,
@@ -57,7 +57,7 @@
                             "imgAlt": "gruas ememca",
                             "href": "/es/servicios/eliminacion-de-tierra",
                             "text": "Eliminación de tierra",
-                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
+                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                         }
                     ]
                 }
