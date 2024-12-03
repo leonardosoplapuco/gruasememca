@@ -12,15 +12,15 @@ function BlogTargets() {
                 </div>
 
                 <ul className="blog-targets">
-                    {t("list", { returnObjects: true }).map((item) => (
-                        <li key={item.id}>
-                            <a href={item.href || "#"} className="hover-target">
-                                {item.imgSrc && (
-                                    <img src={item.imgSrc} alt={item.imgAlt || "Imagen"} />
+                    {t("list", { returnObjects: true }).map((tag) => (
+                        <li key={tag.id}>
+                            <a href={tag.href || "#"} className="hover-target">
+                                {tag.imgSrc && (
+                                    <img src={tag.imgSrc} alt={tag.imgAlt || "Imagen"} />
                                 )}
                                 <div className="d-flex-column">
-                                    {item.content?.[0]?.title && <p className='text-title'>{item.content[0].title}</p>}
-                                    {item.content?.[0]?.text && <p className='text'>{item.content[0].text}</p>}
+                                    {tag.content?.[0]?.title && <p className='text-title'>{tag.content[0].title}</p>}
+                                    {tag.content?.[0]?.text && <p className='text'>{tag.content[0].text}</p>}
                                 </div>
                             </a>
                         </li>
